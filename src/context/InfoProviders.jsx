@@ -15,7 +15,7 @@ const InfoProvider = (props) => {
       setIsLoading(true);
       try {
         const response = await fetch(VITE_API_GEO);
-        console.log({response})
+        // console.log({response})
         if (!response.ok) {
           // console.log('entra acá')
           setTime(new Date());
