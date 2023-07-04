@@ -15,20 +15,6 @@ export const DetalleConcierto = () => {
           <p className="text-base lg:text-lg">15 de Septiembre 2023</p>
           <p className="text-base lg:text-lg">20:30 hs</p>  
         </div>
-        {/* <div className="space-y-3 pt-10 lg:pt-0">
-          <h5 className="text-xl lg:text-2xl">Ubicaciones y precios</h5>
-          <hr />
-          <p className="text-base lg:text-lg">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.tuentrada.com/concierto/rauw-alejandro/plano.jpg"
-              className="underline inline-block"
-            >
-              Ver mapa
-            </a>
-          </p>
-        </div> */}
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7640857977963!2d-58.523271726386994!3d-34.63540155916851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8382fb08ab9%3A0xea0ca78972856a8e!2sEstadio%20Jos%C3%A9%20Amalfitani!5e0!3m2!1ses!2sar!4v1688482549178!5m2!1ses!2sar"
@@ -41,5 +27,4 @@ export const DetalleConcierto = () => {
       ></iframe>
     </section>
   );
-  
 };

@@ -6,11 +6,11 @@ export const Footer = () => {
           src="https://www.tuentrada.com/img/logo_tuboleta_menu.svg"
           style={{ width: "200px", paddingBottom: "20px" }}
           alt=""
-        />{" "}
+        />
       </a>
       <hr className="border border-white  " />
-      <div className="grid grid-cols-1 lg:grid-cols-3  pt-10 text-start md:text-center pb-5">
-        <div className="flex justify-start md:justify-center pt-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3  pt-10 text-start lg:text-center pb-5">
+        <div className="flex justify-start lg:justify-center pt-2">
           <a href="https://instagram.com/tuentrada" target="_blank" rel="noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export const Footer = () => {
         <a
           className="pt-5"
           href="https://www.tuentrada.com/terminosycondiciones/"
-          target="blank"
+          target="_blank"
           rel="noreferrer"
         >
           <p className="text-base lg:text-lg">Términos y condiciones</p>
@@ -65,7 +65,7 @@ export const Footer = () => {
         <a
           className="pt-5"
           href="https://www.tuentrada.com/wallet/"
-          target="blank"
+          target="_blank"
           rel="noreferrer"
         >
           <p className="text-base lg:text-lg">TuEntrada Wallet</p>
@@ -76,3 +76,5 @@ export const Footer = () => {
     </section>
   );
 };
+
+
