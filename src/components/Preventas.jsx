@@ -1,42 +1,22 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { CardsHorario } from "./CardsHorario";
 import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
+import { InfoContext } from "../context/InfoProviders";
 
 const { VITE_API_GEO, VITE_DATE } = getEnvVariables();
 
 const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
-  const [button, setButton] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
-  const [time, setTime] = useState(false);
+  const [button, setButton] = useState(false);
   const [days, setDays] = useState("00");
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
   let interval = useRef();
 
-  useEffect(() => {
-    const getData = async () => {
-      setIsLoading(true);
-      try {
-        const response = await fetch(VITE_API_GEO);
-        if (!response.ok) {
-          setTime(new Date());
-          return;
-        }
-        const data = await response.json();
-        const currentDateTime = new Date(data.datetime);
-        setTime(currentDateTime);
-      } catch (error) {
-        throw new Error(error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    getData();
-  }, []);
+  const { isLoading, time } = useContext(InfoContext);
 
   useEffect(() => {
     if (!time) return;
