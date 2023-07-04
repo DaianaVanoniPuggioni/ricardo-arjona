@@ -10,10 +10,10 @@ const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
   const [button, setButton] = useState(false);
-  const [days, setDays] = useState("00");
-  const [hours, setHours] = useState("00");
-  const [minutes, setMinutes] = useState("00");
-  const [seconds, setSeconds] = useState("00");
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
   let interval = useRef();
 
   const { isLoading, time } = useContext(InfoContext);
