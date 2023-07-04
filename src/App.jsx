@@ -1,24 +1,30 @@
 import ReactGA from "react-ga4";
-import { NavBar, Header, MainEvent } from "./components/";
 import { getEnvVariables } from "./helpers/getEnvVariables";
 import { useEffect } from "react";
+import { Home } from "./components/Home";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 const { VITE_GA } = getEnvVariables();
 
 function App() {
-
   useEffect(() => {
-    ReactGA.initialize( VITE_GA );
-    ReactGA.send({ hitType: "pageview", page: document.location.pathname, title: "Home Page" });
-    
+    ReactGA.initialize(VITE_GA);
+    ReactGA.send({
+      hitType: "pageview",
+      page: document.location.pathname,
+      title: "Home Page",
+    });
   }, []);
 
   return (
-    <>
-      <NavBar />
-      <Header />
-      <MainEvent />
-    </>
+    <BrowserRouter basename="/arjona">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/*">
+            <Redirect to="/" />
+          </Route>
+        </Switch>
+    </BrowserRouter>
   );
 }
 

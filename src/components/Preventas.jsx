@@ -112,7 +112,7 @@ export const Preventas = () => {
             </p>
             <hr className="border border-white" />
             <p className="text-base lg:text-lg">
-              Preventa exclusiva tarjeta santander american express:
+              Preventa exclusiva tarjeta Santander American Express:
               Miercoles 5/7 - 10:00 hs – durante 48 hs o hasta agotar stock.
               <br /><br />
               Hasta 6 cuotas sin interes.
