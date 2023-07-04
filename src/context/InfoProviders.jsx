@@ -17,7 +17,7 @@ const InfoProvider = (props) => {
         const response = await fetch(VITE_API_GEO);
         console.log({response})
         if (!response.ok) {
-          console.log('entra acá')
+          // console.log('entra acá')
           setTime(new Date());
           return;
         }
