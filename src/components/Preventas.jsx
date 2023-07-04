@@ -4,7 +4,7 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_API_GEO, VITE_DATE } = getEnvVariables();
+const { VITE_DATE } = getEnvVariables();
 
 const dateToCompare = new Date(VITE_DATE);
 
@@ -19,7 +19,7 @@ export const Preventas = () => {
   const { isLoading, time } = useContext(InfoContext);
 
   useEffect(() => {
-    if (!time) return;
+    if (time === false) return;
     const intervalo = interval.current;
     startTimer();
     return () => clearInterval(intervalo);
