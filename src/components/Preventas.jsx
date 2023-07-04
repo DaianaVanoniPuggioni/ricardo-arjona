@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { CardsPreventa } from "./CardsPreventa";
+// import { CardsPreventa } from "./CardsPreventa";
 import { CardsHorario } from "./CardsHorario";
 import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
@@ -9,7 +9,7 @@ const { VITE_API_GEO, VITE_DATE } = getEnvVariables();
 const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
-  const [button, setButton] = useState(false);
+  const [button, setButton] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [time, setTime] = useState(false);
   const [days, setDays] = useState("00");
@@ -83,7 +83,7 @@ export const Preventas = () => {
     }, 1000);
   };
 
-  if (isLoading) return <span></span>;
+  // if (isLoading) return <span></span>;
 
   // if (error !== null)
   //   return (
@@ -113,13 +113,13 @@ export const Preventas = () => {
 
   return (
     <section className="text-white container mx-auto pt-10">
-      <h3 className="text-2xl lg:text-4xl text-center pb-5">Preventa Exclusiva Visa Banco Galicia</h3>
+      <h3 className="text-2xl lg:text-4xl text-center pb-5">Preventa exclusiva tarjeta Santander American Express</h3>
      
        
       {!button ? (
         <>
           <div className="bg-contador pt-7">
-            <h3 className="text-2xl lg:text-4xl text-center">Próximamente </h3>
+            <h3 className="text-2xl lg:text-4xl text-center">Próximamente</h3>
             <div className="flex pt-5 justify-center px-2">
               <CardsHorario texto={"Día"} num={days} />
               <CardsHorario texto={"Hora"} num={hours} />
@@ -159,25 +159,34 @@ export const Preventas = () => {
                   href="https://wallet.tuentrada.com/account/login"
                 >
                   CLICK AQUÍ
-                </a>
-              </strong>
-            
-             
+                </a> <br />   <br />          </strong>
+              
             </p>
             <hr className="border border-white  " />
-            <img style={{width:"300px",}}  src="https://tuentrada.com/concierto/ricardo-arjona/santander-amex.png" alt="" />
+            <p> Preventa exclusiva tarjeta santander american express:
+Miercoles 5/7 - 10:00 hs – durante 48 hs o hasta agotar stock.
+<br /><br />
+Hasta 6 cuotas sin interes.
+<br /><br />
+Finalizada la preventa comenzara la venta general.
+    
+            
+             </p>
+         
+            <img style={{width:"400px",}}  src="https://tuentrada.com/concierto/ricardo-arjona/santander-amex.png" alt="" />
             <h3 className="text-2xl lg:text-4xl py-10">
               Ubicaciones y precios
             </h3>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
-          <div className="flex flex-col justify-center px-1 lg:px-10 md:pt-5 ">
-            <CardsPreventa />
-          </div>
+        
+           
+        <img className="block sm:hidden" src="https://tuentrada.com/concierto/ricardo-arjona/mapa-celularv2.png" alt="Rauw Alejandro" />
+        <img className="hidden sm:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/ricardo-arjona/mapa-tabletv2.png" alt="Rauw Alejandro" />
+        <img className="hidden  lg:block w-screen"  src="https://tuentrada.com/concierto/ricardo-arjona/mapa-computadorav2.png" alt="Rauw Alejandro" />
         
         </div>
-     <a href="">Ver Mapa</a>
       </section>
     </section>
   );
