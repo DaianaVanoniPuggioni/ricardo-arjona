@@ -132,28 +132,28 @@ export const DetalleSpotify = () => {
           </h3>
           <p>
             Facebook:{" "}
-            <a href="https://www.facebook.com/arjonaoficial/">@ArjonaOficial</a>
+            <a target="blank" href="https://www.facebook.com/arjonaoficial/">@ArjonaOficial</a>
             | 18 MILLONES de seguidores <br />
             Twitter:{" "}
-            <a href="https://twitter.com/Ricardo_Arjona">@Ricardo_Arjona </a> |
+            <a target="blank" href="https://twitter.com/Ricardo_Arjona">@Ricardo_Arjona </a> |
             10.3 MILLONES de seguidores <br />
             Instagram:{" "}
-            <a href="https://www.instagram.com/ricardoarjona/">
+            <a target="blank" href="https://www.instagram.com/ricardoarjona/">
               @ricardoarjona
             </a>
             | 5.6 MILLONES de seguidores <br />
             Youtube:{" "}
-            <a href="https://www.youtube.com/user/ArjonaOficial">
+            <a target="blank" href="https://www.youtube.com/user/ArjonaOficial">
               @ArjonaOficial
             </a>
             | 6.9 MILLONES de suscriptores <br />
             Tik Tok:{" "}
-            <a href="https://www.tiktok.com/@ricardoarjona">
+            <a target="blank" href="https://www.tiktok.com/@ricardoarjona">
               @arjonaoficial
             </a>{" "}
             <br /> <br />
             PARA MÁS INFORMACIÓN: <br />
-            <a className="underline" href="https://www.ricardoarjona.com">
+            <a target="blank" className="underline" href="https://www.ricardoarjona.com">
               www.ricardoarjona.com
             </a>
           </p>
