@@ -18,11 +18,14 @@ export const Preventas = () => {
 
   const { isLoading, time } = useContext(InfoContext);
 
+
+
   useEffect(() => {
+    if(time === false) return
     const intervalo = interval.current;
     startTimer();
     return () => clearInterval(intervalo);
-  }, []);
+  }, [time]);
 
   const startTimer = () => {
     let newTime = time.getTime();
