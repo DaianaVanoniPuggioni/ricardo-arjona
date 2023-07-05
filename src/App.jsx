@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/arjona2">
+    <BrowserRouter basename="/arjona">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/*">
