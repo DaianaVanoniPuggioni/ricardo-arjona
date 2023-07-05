@@ -8,7 +8,7 @@ export const InfoContext = createContext();
 const InfoProvider = (props) => {
 
   const [isLoading, setIsLoading] = useState(true);
-  const [time, setTime] = useState(false);
+  const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     const getData = async () => {
@@ -17,7 +17,7 @@ const InfoProvider = (props) => {
         const response = await fetch(VITE_API_GEO);
         // console.log({response})
         if (!response.ok) {
-          console.log('entra acá')
+          // console.log('entra acá')
           setTime(new Date());
           return;
         }
