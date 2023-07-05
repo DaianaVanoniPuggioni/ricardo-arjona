@@ -8,7 +8,7 @@ export const InfoContext = createContext();
 const InfoProvider = (props) => {
 
   const [isLoading, setIsLoading] = useState(true);
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState(0);
 
   useEffect(() => {
     const getData = async () => {

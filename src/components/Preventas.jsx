@@ -21,7 +21,7 @@ export const Preventas = () => {
 
 
   useEffect(() => {
-    
+    if (time === 0) return
     console.log('wuef worker')
 
     const worker = new Worker(new URL("/src/helpers/countdownWorker.js", import.meta.url));
@@ -48,7 +48,7 @@ export const Preventas = () => {
     // const intervalo = interval.current;
     // startTimer();
     // return () => clearInterval(intervalo);
-  }, []);
+  }, [time]);
 
   
 
