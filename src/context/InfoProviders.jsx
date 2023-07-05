@@ -6,11 +6,12 @@ const { VITE_API_GEO } = getEnvVariables();
 export const InfoContext = createContext();
 
 const InfoProvider = (props) => {
-
+  const [button, setButton] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [time, setTime] = useState(0);
 
   useEffect(() => {
+    if(button === true) return
     const getData = async () => {
       setIsLoading(true);
       try {
@@ -32,7 +33,7 @@ const InfoProvider = (props) => {
       }
     };
     getData();
-  }, []);
+  }, [button]);
 
 
 
@@ -41,7 +42,9 @@ const InfoProvider = (props) => {
     <InfoContext.Provider
       value={{
         isLoading,
-        time
+        time,
+        button, 
+        setButton
       }}
     >
       {props.children}

@@ -11,13 +11,12 @@ const { VITE_DATE } = getEnvVariables();
 const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
-  const [button, setButton] = useState(false);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const { isLoading, time } = useContext(InfoContext);
+  const { isLoading, time, button, setButton } = useContext(InfoContext);
 
 
   useEffect(() => {
