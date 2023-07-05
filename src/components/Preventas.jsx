@@ -1,11 +1,13 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CardsHorario } from "./CardsHorario";
 import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
 const { VITE_DATE } = getEnvVariables();
+// const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
+// const dateToCompare = new Date(pruebaDateToCompare);
 const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
@@ -14,54 +16,41 @@ export const Preventas = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  let interval = useRef();
 
   const { isLoading, time } = useContext(InfoContext);
 
 
-
   useEffect(() => {
-    if(time === false) return
-    const intervalo = interval.current;
-    startTimer();
-    return () => clearInterval(intervalo);
+    if (time === 0) return
+    // console.log('wuef worker')
+
+    const worker = new Worker(new URL("/src/helpers/countdownWorker.js", import.meta.url));
+
+    worker.onmessage = (event) => {
+      // console.log('worker')
+      const { dias, horas, minutos, segundos, button: countdownButton } = event.data;
+      setDays(dias);
+      setHours(horas);
+      setMinutes(minutos);
+      setSeconds(segundos);
+      setButton(countdownButton);
+    };
+    // console.log('post worker')
+    worker.postMessage({ dateToCompare, newTime: time.getTime() });
+
+    return () => {
+      // console.log('return worker')
+      worker.terminate();
+    };
+
+
+
+    // const intervalo = interval.current;
+    // startTimer();
+    // return () => clearInterval(intervalo);
   }, [time]);
 
-  const startTimer = () => {
-    let newTime = time.getTime();
-
-    interval = setInterval(() => {
-      const difference = dateToCompare.getTime() - newTime;
-      const dias = Math.floor(difference / (1000 * 60 * 60 * 24))
-        .toString()
-        .padStart(2, "0");
-
-      const horas = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      )
-        .toString()
-        .padStart(2, "0");
-
-      const minutos = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
-        .toString()
-        .padStart(2, "0");
-
-      const segundos = Math.floor((difference % (1000 * 60)) / 1000)
-        .toString()
-        .padStart(2, "0");
-
-      if (difference < 0) {
-        clearInterval(interval);
-        setButton(true);
-      } else {
-        newTime = newTime + 1000;
-        setDays(dias);
-        setHours(horas);
-        setMinutes(minutos);
-        setSeconds(segundos);
-      }
-    }, 1000);
-  };
+  
 
   if (isLoading) return <span></span>;
 
