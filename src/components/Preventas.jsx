@@ -5,7 +5,9 @@ import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
 const { VITE_DATE } = getEnvVariables();
+// const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
+// const dateToCompare = new Date(pruebaDateToCompare);
 const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
@@ -19,11 +21,13 @@ export const Preventas = () => {
 
 
   useEffect(() => {
-   
+    
+    console.log('wuef worker')
 
     const worker = new Worker(new URL("/src/helpers/countdownWorker.js", import.meta.url));
 
     worker.onmessage = (event) => {
+      // console.log('worker')
       const { dias, horas, minutos, segundos, button: countdownButton } = event.data;
       setDays(dias);
       setHours(horas);
@@ -31,10 +35,11 @@ export const Preventas = () => {
       setSeconds(segundos);
       setButton(countdownButton);
     };
-
+    // console.log('post worker')
     worker.postMessage({ dateToCompare, newTime: time.getTime() });
 
     return () => {
+      // console.log('return worker')
       worker.terminate();
     };
 
