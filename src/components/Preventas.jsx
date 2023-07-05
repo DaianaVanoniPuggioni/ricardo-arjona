@@ -4,7 +4,7 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE } = getEnvVariables();
+const { VITE_DATE, VITE_API_GEO } = getEnvVariables();
 // const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
 // const dateToCompare = new Date(pruebaDateToCompare);
@@ -16,8 +16,33 @@ export const Preventas = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  const [time, setTime] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const { isLoading, time } = useContext(InfoContext);
+  // const { isLoading, time } = useContext(InfoContext);
+
+  useEffect(() => {
+    if(button === true) return
+    const getData = async () => {
+      setIsLoading(true);
+      try {
+        const response = await fetch(VITE_API_GEO);
+        if (!response.ok) {
+          setTime(new Date());
+          return;
+        }
+        const data = await response.json();
+        const currentDateTime = new Date(data.datetime);
+        setTime(currentDateTime);
+      } catch (error) {
+        setTime(new Date());
+        throw new Error(error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    getData();
+  }, [button]);
 
 
   useEffect(() => {
@@ -52,7 +77,7 @@ export const Preventas = () => {
 
   
 
-  if (isLoading) return <span></span>;
+  // if (isLoading) return <span></span>;
 
   return (
     <section className="text-white container mx-auto pt-10">
