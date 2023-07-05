@@ -14,9 +14,10 @@ export const Preventas = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  let interval = useRef();
+  // let interval = useRef();
 
   const { isLoading, time } = useContext(InfoContext);
+
 
   useEffect(() => {
     if (time === false) return;
@@ -24,8 +25,7 @@ export const Preventas = () => {
     const worker = new Worker("/src/helpers/countdownWorker.js");
 
     worker.onmessage = (event) => {
-      const { dias, horas, minutos, segundos, button: countdownButton } =
-        event.data;
+      const { dias, horas, minutos, segundos, button: countdownButton } = event.data;
       setDays(dias);
       setHours(horas);
       setMinutes(minutos);
