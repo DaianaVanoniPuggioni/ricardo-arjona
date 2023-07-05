@@ -1,10 +1,10 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CardsHorario } from "./CardsHorario";
 import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
-import { InfoContext } from "../context/InfoProviders";
+// import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE } = getEnvVariables();
+const { VITE_DATE, VITE_API_GEO } = getEnvVariables();
 
 const dateToCompare = new Date(VITE_DATE);
 
@@ -14,14 +14,39 @@ export const Preventas = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  const [time, setTime] = useState(0);
   let interval = useRef();
 
-  const { isLoading, time } = useContext(InfoContext);
+  // const { isLoading, time } = useContext(InfoContext);
+
+  useEffect(() => {
+    if(button === true) return
+    const getData = async () => {
+      setIsLoading(true);
+      try {
+        const response = await fetch(VITE_API_GEO);
+        if (!response.ok) {
+          setTime(new Date());
+          return;
+        }
+        const data = await response.json();
+        const currentDateTime = new Date(data.datetime);
+        setTime(currentDateTime);
+      } catch (error) {
+        setTime(new Date());
+        throw new Error(error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    getData();
+  }, [button]);
 
 
 
   useEffect(() => {
-    if(time === false) return
+    if(time === 0) return
     const intervalo = interval.current;
     startTimer();
     return () => clearInterval(intervalo);
@@ -63,7 +88,7 @@ export const Preventas = () => {
     }, 1000);
   };
 
-  if (isLoading) return <span></span>;
+  // if (isLoading) return <span></span>;
 
   return (
     <section className="text-white container mx-auto pt-10">
@@ -121,14 +146,14 @@ export const Preventas = () => {
             </p>
             <hr className="border border-white" />
             <p className="text-base lg:text-lg">
-              Preventa exclusiva tarjeta Santander American Express: Miercoles
+              Preventa exclusiva tarjeta Santander American Express: Miércoles
               5/7 - 10:00 hs – durante 48 hs o hasta agotar stock.
               <br />
               <br />
-              Hasta 6 cuotas sin interes.
+              Hasta 6 cuotas sin interés.
               <br />
               <br />
-              Finalizada la preventa comenzara la venta general.
+              Finalizada la preventa comenzará la venta general.
             </p>
             <img
               style={{ width: "400px" }}
