@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CardsHorario } from "./CardsHorario";
 import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
@@ -14,7 +14,6 @@ export const Preventas = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  // let interval = useRef();
 
   const { isLoading, time } = useContext(InfoContext);
 
@@ -22,7 +21,7 @@ export const Preventas = () => {
   useEffect(() => {
     if (time === false) return;
 
-    const worker = new Worker("/src/helpers/countdownWorker.js");
+    const worker = new Worker(new URL("/src/helpers/countdownWorker.js", import.meta.url));
 
     worker.onmessage = (event) => {
       const { dias, horas, minutos, segundos, button: countdownButton } = event.data;
