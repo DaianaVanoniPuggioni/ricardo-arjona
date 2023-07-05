@@ -20,42 +20,33 @@ export const Preventas = () => {
 
   useEffect(() => {
     if (time === false) return;
-    const intervalo = interval.current;
-    startTimer();
-    return () => clearInterval(intervalo);
+
+    const worker = new Worker("/src/helpers/countdownWorker.js");
+
+    worker.onmessage = (event) => {
+      const { dias, horas, minutos, segundos, button: countdownButton } =
+        event.data;
+      setDays(dias);
+      setHours(horas);
+      setMinutes(minutos);
+      setSeconds(segundos);
+      setButton(countdownButton);
+    };
+
+    worker.postMessage({ dateToCompare, newTime: time.getTime() });
+
+    return () => {
+      worker.terminate();
+    };
+
+
+
+    // const intervalo = interval.current;
+    // startTimer();
+    // return () => clearInterval(intervalo);
   }, [time]);
 
-  const startTimer = () => {
-    let newTime = time.getTime();
-    interval = setInterval(() => {
-      const difference = dateToCompare.getTime() - newTime;
-      const dias = Math.floor(difference / (1000 * 60 * 60 * 24))
-        .toString()
-        .padStart(2, "0");
-      const horas = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      )
-        .toString()
-        .padStart(2, "0");
-      const minutos = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
-        .toString()
-        .padStart(2, "0");
-      const segundos = Math.floor((difference % (1000 * 60)) / 1000)
-        .toString()
-        .padStart(2, "0");
-
-      if (difference < 0) {
-        clearInterval(interval);
-        setButton(true);
-      } else {
-        newTime = newTime + 1000;
-        setDays(dias);
-        setHours(horas);
-        setMinutes(minutos);
-        setSeconds(segundos);
-      }
-    }, 1000);
-  };
+  
 
   if(isLoading) return <span></span>
 
