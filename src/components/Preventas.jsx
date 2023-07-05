@@ -97,7 +97,7 @@ export const Preventas = () => {
               contador. <br />
               <br />
               <strong>
-                Anticipate: Registrate o actualiza tus datos haciendo
+                Anticipate: Registrate o actualizá tus datos haciendo
                 <a
                   target="blank"
                   className="underline inline-block ml-1 hover:text-gray-300"
@@ -110,14 +110,14 @@ export const Preventas = () => {
             </p>
             <hr className="border border-white" />
             <p className="text-base lg:text-lg">
-              Preventa exclusiva tarjeta Santander American Express: Miercoles
+              Preventa exclusiva tarjeta Santander American Express: Miércoles
               5/7 - 10:00 hs – durante 48 hs o hasta agotar stock.
               <br />
               <br />
-              Hasta 6 cuotas sin interes.
+              Hasta 6 cuotas sin interés.
               <br />
               <br />
-              Finalizada la preventa comenzara la venta general.
+              Finalizada la preventa comenzará la venta general.
             </p>
             <img
               style={{ width: "400px" }}
