@@ -157,17 +157,17 @@ export const Preventas = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
           <img
             className="block sm:hidden"
-            src="https://tuentrada.com/concierto/ricardo-arjona/mapa-celularv2.png"
+            src="https://tuentrada.com/concierto/ricardo-arjona/plano-celularvg.png"
             alt="plano Arjona"
           />
           <img
             className="hidden sm:block w-screen lg:hidden"
-            src="https://tuentrada.com/concierto/ricardo-arjona/mapa-tabletv2.png"
+            src="https://tuentrada.com/concierto/ricardo-arjona/plano-tabletvg.png"
             alt="plano Arjona"
           />
           <img
             className="hidden  lg:block w-screen"
-            src="https://tuentrada.com/concierto/ricardo-arjona/mapa-computadorav2.png"
+            src="https://tuentrada.com/concierto/ricardo-arjona/plano-computadoravg.png"
             alt="plano Arjona"
           />
         </div>
