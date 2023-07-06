@@ -11,7 +11,7 @@ const { VITE_DATE, VITE_API_GEO } = getEnvVariables();
 const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
-  const [button, setButton] = useState(true);
+  const [button, setButton] = useState(false);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -82,7 +82,7 @@ export const Preventas = () => {
   return (
     <section className="text-white container mx-auto pt-10">
       <h3 className="text-2xl lg:text-4xl text-center pb-5">
-        Preventa exclusiva tarjeta Santander American Express
+        Venta General
       </h3>
 
       {!button ? (
