@@ -4,14 +4,14 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE, VITE_API_GEO } = getEnvVariables();
+const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA } = getEnvVariables();
 // const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
 // const dateToCompare = new Date(pruebaDateToCompare);
 const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
-  const [button, setButton] = useState(true);
+  const [button, setButton] = useState(false);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -22,7 +22,7 @@ export const Preventas = () => {
   // const { isLoading, time } = useContext(InfoContext);
 
   useEffect(() => {
-    if(button === true) return
+    if (button === true) return;
     const getData = async () => {
       setIsLoading(true);
       try {
@@ -44,16 +44,23 @@ export const Preventas = () => {
     getData();
   }, [button]);
 
-
   useEffect(() => {
-    if (time === 0) return
+    if (time === 0) return;
     // console.log('wuef worker')
 
-    const worker = new Worker(new URL("/src/helpers/countdownWorker.js", import.meta.url));
+    const worker = new Worker(
+      new URL("/src/helpers/countdownWorker.js", import.meta.url)
+    );
 
     worker.onmessage = (event) => {
       // console.log('worker')
-      const { dias, horas, minutos, segundos, button: countdownButton } = event.data;
+      const {
+        dias,
+        horas,
+        minutos,
+        segundos,
+        button: countdownButton,
+      } = event.data;
       setDays(dias);
       setHours(horas);
       setMinutes(minutos);
@@ -68,39 +75,50 @@ export const Preventas = () => {
       worker.terminate();
     };
 
-
-
     // const intervalo = interval.current;
     // startTimer();
     // return () => clearInterval(intervalo);
   }, [time]);
 
-  
-
   // if (isLoading) return <span></span>;
 
   return (
     <section className="text-white container mx-auto pt-10">
-      <h3 className="text-2xl lg:text-4xl text-center pb-5">
-        Venta General
-      </h3>
-
-      {!button ? (
+      <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-5">
+        <h3 className="text-xl lg:text-2xl mb-3 lg:mb-0 text-center">Viernes 15 de septiembre:</h3>
+        <a
+          href={`https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA}`}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block"
+        >
+          <button
+            className={` bg-white border-white border hover:bg-transparent hover:text-white  text-md lg:text-lg text-black font-bold py-1  px-10  md:px-10 rounded-full`}
+          >
+            Comprar
+          </button>
+        </a>
+        {/* <BotonComprar href={ `https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA}` } /> */}
+      </div>
+      {/* <div className="flex pt-2 justify-center px-2">
+        <BotonComprar href={ `https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA}` } />
+      </div> */}
+      <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:gap-5">
+        <h3 className="text-3xl lg:text-4xl text-center mb-3 lg:mb-0">
+          Sábado 16 de septiembre{button ? ":" : " a la venta en:"}
+        </h3>
+        {button && <BotonComprar href={`https://tuentrada.com`} />}
+      </div>
+      {!button && (
         <>
-          <div className="bg-contador pt-7">
-            <h3 className="text-2xl lg:text-4xl text-center">Próximamente</h3>
+          <div className="bg-contador pt-10 mt-5">
+            {/* <h3 className="text-2xl lg:text-4xl text-center">16 de septiembre</h3> */}
             <div className="flex pt-5 justify-center px-2">
               <CardsHorario texto={"Día"} num={days} />
               <CardsHorario texto={"Hora"} num={hours} />
               <CardsHorario texto={"Min"} num={minutes} />
               <CardsHorario texto={"Seg"} num={seconds} />
             </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="flex pt-5 justify-center px-2">
-            <BotonComprar />
           </div>
         </>
       )}
@@ -134,7 +152,7 @@ export const Preventas = () => {
               </strong>
             </p>
             <hr className="border border-white" />
-            <p className="text-base lg:text-lg">
+            {/* <p className="text-base lg:text-lg">
               Preventa exclusiva tarjeta Santander American Express: Miércoles
               5/7 - 10:00 hs – durante 48 hs o hasta agotar stock.
               <br />
@@ -143,7 +161,7 @@ export const Preventas = () => {
               <br />
               <br />
               Finalizada la preventa comenzará la venta general.
-            </p>
+            </p> */}
             <img
               style={{ width: "400px" }}
               src="https://tuentrada.com/concierto/ricardo-arjona/santander-amex.png"

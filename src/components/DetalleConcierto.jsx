@@ -12,8 +12,8 @@ export const DetalleConcierto = () => {
         <div className="space-y-3 pt-10 lg:pt-0">
           <h5 className="text-xl lg:text-2xl">Fecha y hora</h5>
           <hr className="border border-white" />
-          <p className="text-base lg:text-lg">15 de Septiembre 2023</p>
-          <p className="text-base lg:text-lg">20:30 hs</p>  
+          <p className="text-base lg:text-lg">15 de Septiembre 2023, 20:30 hs</p>
+          <p className="text-base lg:text-lg">16 de Septiembre 2023, 20:30 hs</p> 
         </div>
       </div>
       <iframe
