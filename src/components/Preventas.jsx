@@ -4,7 +4,7 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA } = getEnvVariables();
+const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA_16SEPT } = getEnvVariables();
 // const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
 // const dateToCompare = new Date(pruebaDateToCompare);
@@ -84,26 +84,21 @@ export const Preventas = () => {
 
   return (
     <section className="text-white container mx-auto pt-10">
-      {/* <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-5">
-        <h3 className="text-xl lg:text-2xl mb-3 lg:mb-0 text-center">Viernes 15 de septiembre:</h3>
-        <a
-          href={`https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA}`}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-block"
-        >
+      <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-5">
+        <h3 className="text-xl lg:text-2xl mb-3 lg:mb-0 text-center">Viernes 15 de septiembre</h3>
+        
           <button
-            className={` bg-white border-white border hover:bg-transparent hover:text-white  text-md lg:text-lg text-black font-bold py-1  px-10  md:px-10 rounded-full`}
+            className={`bg-[#7E0D23] cursor-default border-[#7E0D23] border  text-md lg:text-lg text-white font-bold py-1  px-10  md:px-10 rounded-full`}
           >
-            Comprar
+            Agotado
           </button>
-        </a>
-      </div> */}
+       
+      </div>
       <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:gap-5">
         <h3 className="text-3xl lg:text-4xl text-center mb-3 lg:mb-0">
           Sábado 16 de septiembre{button ? ":" : " a la venta en:"}
         </h3>
-        {button && <BotonComprar href={`https://tuentrada.com`} />}
+        {button && <BotonComprar href={`https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA_16SEPT}`} />}
       </div>
       {!button && (
         <>
