@@ -84,7 +84,7 @@ export const Preventas = () => {
 
   return (
     <section className="text-white container mx-auto pt-10">
-      <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-5">
+      {/* <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-5">
         <h3 className="text-xl lg:text-2xl mb-3 lg:mb-0 text-center">Viernes 15 de septiembre:</h3>
         <a
           href={`https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA}`}
@@ -98,10 +98,6 @@ export const Preventas = () => {
             Comprar
           </button>
         </a>
-        {/* <BotonComprar href={ `https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA}` } /> */}
-      </div>
-      {/* <div className="flex pt-2 justify-center px-2">
-        <BotonComprar href={ `https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA}` } />
       </div> */}
       <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:gap-5">
         <h3 className="text-3xl lg:text-4xl text-center mb-3 lg:mb-0">

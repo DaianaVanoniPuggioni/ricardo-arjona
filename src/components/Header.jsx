@@ -22,10 +22,10 @@ export const Header = () => {
         //   backgroundImage: `url("https://www.tuentrada.com/concierto/rauw-alejandro/banner.png"})`,
         // }}
       style={{padding:" 0 20px"}} >
-        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/ricardo-arjona/900x800.jpg" alt="Rauw Alejandro" />
-        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/ricardo-arjona/800x400.jpg" alt="Rauw Alejandro" />
-        <img className="hidden  lg:block w-screen"  src="https://tuentrada.com/concierto/ricardo-arjona/1920x710.webp" alt="Rauw Alejandro" />
-        <h1 className="hidden">Rauw Alejandro</h1>
+        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/ricardo-arjona/900x800v2.jpg" alt="Ricardo Arjona" />
+        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/ricardo-arjona/800x400v2.jpg" alt="Ricardo Arjona" />
+        <img className="hidden  lg:block w-screen"  src="https://tuentrada.com/concierto/ricardo-arjona/1920x710v2.webp" alt="Ricardo Arjona" />
+        <h1 className="hidden">Ricardo Arjona</h1>
         <h2 className="hidden">Parque Sarmiento</h2>
           
         {/* <div
