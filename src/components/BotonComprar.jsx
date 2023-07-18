@@ -9,7 +9,7 @@ export const BotonComprar = ({href}) => {
         className="inline-block"
       >
         <button
-          className={` bg-white border-white border hover:bg-transparent hover:text-white  text-lg lg:text-xl text-black font-bold py-2  px-20  md:px-24 rounded-full`}
+          className={` bg-white border-white border hover:bg-transparent hover:text-white  text-lg text-black font-bold py-2 px-10  md:px-12 rounded-full`}
         >
           Comprar
         </button>

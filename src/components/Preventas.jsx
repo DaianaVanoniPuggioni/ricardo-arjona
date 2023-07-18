@@ -4,7 +4,7 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA_16SEPT } = getEnvVariables();
+const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA_15SEPT, VITE_ID_VENTA_16SEPT } = getEnvVariables();
 // const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
 // const dateToCompare = new Date(pruebaDateToCompare);
@@ -85,18 +85,14 @@ export const Preventas = () => {
   return (
     <section className="text-white container mx-auto pt-10">
       <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-5">
-        <h3 className="text-xl lg:text-2xl mb-3 lg:mb-0 text-center">Viernes 15 de septiembre</h3>
+        <h3 className="text-2xl lg:text-3xl mb-3 lg:mb-0 text-center">Viernes 15 de septiembre:</h3>
         
-          <button
-            className={`bg-[#7E0D23] cursor-default border-[#7E0D23] border  text-md lg:text-lg text-white font-bold py-1  px-10  md:px-10 rounded-full`}
-          >
-            Agotado
-          </button>
+        {button && <BotonComprar href={`https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA_15SEPT}`} />}
        
       </div>
       <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:gap-5">
-        <h3 className="text-3xl lg:text-4xl text-center mb-3 lg:mb-0">
-          Sábado 16 de septiembre{button ? ":" : " a la venta en:"}
+        <h3 className="text-2xl lg:text-3xl text-center mb-3 lg:mb-0">
+          Sábado 16 de septiembre:
         </h3>
         {button && <BotonComprar href={`https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA_16SEPT}`} />}
       </div>
