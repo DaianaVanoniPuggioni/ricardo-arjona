@@ -9,19 +9,19 @@ export const DetalleSpotify = () => {
           Volver… para decir adiós
         </h3>
 
-        {/* <p className="text-base lg:text-lg">
-          El cantautor cerrará su exitosa gira blanco y negro con un show único
-          en el estadio Vélez Sarsfield
-        </p> */}
-        <p className="mt-3 mb-7 text-base lg:text-lg">
+        <p className="text-base lg:text-xl">
+          RICARDO ARJONA EN ARGENTINA <br />
+          LA GIRA MÁS EXITOSA DE LOS ÚLTIMOS TIEMPOS VUELVE PARA DECIR ADIOS
+        </p>
+        <p className="mt-5 mb-7 text-base lg:text-lg">
           Saliendo de la intimidad que propuso en sus 8 fechas en el Movistar
           Arena en 2022, llega en septiembre al estadio velez sarsfield con una
           contundente puesta en escena para despedir su exitoso blanco y negro
-          tour. 
-          Ésta será la última oportunidad para que el público argentino viva un
-          concierto único. <br /><br /> Blanco y negro tour es un exito mundial tras dos años
-          de gira con 160 conciertos entre europa, estados unidos y
-          latinoamérica. <br />
+          tour. Ésta será la última oportunidad para que el público argentino
+          viva un concierto único. <br />
+          <br /> Blanco y negro tour es un exito mundial tras dos años de gira
+          con 160 conciertos entre europa, estados unidos y latinoamérica.{" "}
+          <br />
           <br />
           Sin dudas Argentina es uno de los países más especiales para Ricardo
           Arjona y eso quedó en evidencia al ser elegido para cerrar una gira
@@ -157,8 +157,13 @@ export const DetalleSpotify = () => {
             src="https://tuentrada.com/concierto/ricardo-arjona/fenixv2.png"
             alt="logo fenix"
           />
-          <div className="flex pt-2">
-            <a href="https://www.facebook.com/fenixargentina/" target="_blank" rel="noreferrer">
+          <p></p>
+          <div className="flex py-3">
+            <a
+              href="https://www.facebook.com/fenixargentina/"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +197,11 @@ export const DetalleSpotify = () => {
                 <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
               </svg>
             </a>
-            <a href="https://twitter.com/fenix_latam" target="_blank" rel="noreferrer">
+            <a
+              href="https://twitter.com/fenix_latam"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -240,6 +249,36 @@ export const DetalleSpotify = () => {
               </svg>
             </a>
           </div>
+          <h3>ACERCA DE FENIX ENTERTAINMENT</h3>
+          <p className="mt-4">
+            Somos una empresa global de entretenimiento y promoción con fuerte
+            presencia en Argentina, Latinoamérica y Europa. A lo largo de
+            nuestros 35 años de trayectoria, el compromiso, la pasión, y la
+            diversión han sido los valores fundamentales de nuestra visión
+            empresarial y motor de crecimiento. <br />
+            <br />
+            Contamos con 2 unidades de negocios diferenciadas para establecer
+            puntos de conexión con nuestras audiencias: Live shows, con oficinas
+            ubicadas en Argentina, México, Chile, Perú, Paraguay, Uruguay y
+            Europa, trabaja sobre los pilares de música, deporte, arte y gaming.
+            Y la unidad de Parques, compuesta por “Parque de La Costa” el único
+            parque de diversiones de Argentina, el parque acuático “Aquafan” y
+            “Mundo Gea”, un espacio en la Ciudad de Buenos Aires que promueve
+            conocer nuestros ecosistemas y biodiversidad combinando
+            entretenimiento, educación y tecnología. <br />
+            <br />
+            Somos una empresa líder, posicionada como la productora de
+            entretenimiento de origen argentino de mayor crecimiento y expansión
+            internacional, porque lo hacemos diferente: cada espectáculo, cada
+            talento, cada contenido, cada experiencia es tratada como única, con
+            dedicación, en detalle, y con especial atención para lograr el mejor
+            recuerdo en los millones de personas que nos acompañan cada año.{" "}
+            <br />
+            <br />
+             La búsqueda constante de superar nuestros propios límites es parte
+            del ADN de cada uno de los que con orgullo formamos Fenix
+            Entertainment.
+          </p>
         </div>
       </div>
     </section>
