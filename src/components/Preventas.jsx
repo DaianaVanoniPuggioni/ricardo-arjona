@@ -87,14 +87,14 @@ export const Preventas = () => {
       <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-5">
         <h3 className="text-2xl lg:text-3xl mb-3 lg:mb-0 text-center">Viernes 15 de septiembre:</h3>
         
-        {button && <BotonComprar href={`https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA_15SEPT}`} />}
+        {button && <BotonComprar href={`https://eventosgen1.tuentrada.com/secured/selection/event/date?productId=10228799186977`} />}
        
       </div>
       <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:gap-5">
         <h3 className="text-2xl lg:text-3xl text-center mb-3 lg:mb-0">
           Sábado 16 de septiembre:
         </h3>
-        {button && <BotonComprar href={`https://filavirtual.tuentrada.com/selection/event/date?productId=${VITE_ID_VENTA_16SEPT}`} />}
+        {button && <BotonComprar href={`https://eventosgen1.tuentrada.com/secured/selection/event/date?productId=10228800568185`} />}
       </div>
       {!button && (
         <>
