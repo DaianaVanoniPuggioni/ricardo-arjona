@@ -4,14 +4,14 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA_15SEPT, VITE_ID_VENTA_16SEPT } = getEnvVariables();
+const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA_15DIC } = getEnvVariables();
 // const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
 // const dateToCompare = new Date(pruebaDateToCompare);
 const dateToCompare = new Date(VITE_DATE);
 
 export const Preventas = () => {
-  const [button, setButton] = useState(true);
+  const [button, setButton] = useState(false);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -84,31 +84,28 @@ export const Preventas = () => {
 
   return (
     <section className="text-white container mx-auto pt-10">
-      <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-5">
-        <h3 className="text-2xl lg:text-3xl mb-3 lg:mb-0 text-center">Viernes 15 de septiembre:</h3>
-        
-        {button && <BotonComprar href={`https://eventosgen1.tuentrada.com/secured/selection/event/date?productId=10228799186977`} />}
-       
-      </div>
-      <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:gap-5">
-        <h3 className="text-2xl lg:text-3xl text-center mb-3 lg:mb-0">
-          Sábado 16 de septiembre:
-        </h3>
-        {button && <BotonComprar href={`https://eventosgen1.tuentrada.com/secured/selection/event/date?productId=10228800568185`} />}
-      </div>
-      {!button && (
+      <div className="flex flex-col items-center justify-center  lg:gap-9 md:border-2 border-white lg:p-10 p-2 ">
+        <h3 className="text-2xl lg:text-4xl mb-3 lg:mb-0 text-center font-bold py-10">15 DICIEMBRE | ESTADIO VELEZ</h3>
+
+        {!button && (
         <>
-          <div className="bg-contador pt-10 mt-5">
+          <div>
             {/* <h3 className="text-2xl lg:text-4xl text-center">16 de septiembre</h3> */}
-            <div className="flex pt-5 justify-center px-2">
+            <div className="flex pt-5 justify-center px-2 gap-1 ">
               <CardsHorario texto={"Día"} num={days} />
-              <CardsHorario texto={"Hora"} num={hours} />
+              <CardsHorario texto={"Hs"} num={hours} />
               <CardsHorario texto={"Min"} num={minutes} />
               <CardsHorario texto={"Seg"} num={seconds} />
             </div>
           </div>
         </>
       )}
+        
+        {button && <BotonComprar href={`https://filavirtual.tuentrada.com/secured/selection/event/date?productId=${VITE_ID_VENTA_15DIC}`} />}
+       
+      </div>
+      
+     
 
       {/* Código comentado */}
       {/* {button ? (
@@ -131,7 +128,7 @@ export const Preventas = () => {
                 <a
                   target="blank"
                   className="underline inline-block ml-1 hover:text-gray-300"
-                  href="https://wallet.tuentrada.com/account/login"
+                  href="https://filavirtual.tuentrada.com/account/login"
                 >
                   CLICK AQUÍ
                 </a>{" "}
@@ -150,8 +147,8 @@ export const Preventas = () => {
               Finalizada la preventa comenzará la venta general.
             </p> */}
             <img
-              style={{ width: "400px" }}
-              src="https://tuentrada.com/concierto/ricardo-arjona/santander-amex.png"
+             className="w-[250] md:sm:w-[250px] lg:w-[50%] xl:w-[35%] "
+              src="https://tuentrada.com/evento/airbag/cuotas-1.png"
               alt=""
             />
             <h3 className="text-2xl lg:text-4xl py-10">
@@ -162,17 +159,17 @@ export const Preventas = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
           <img
             className="block sm:hidden"
-            src="https://tuentrada.com/concierto/ricardo-arjona/plano-celularvg.png"
+            src="https://tuentrada.com/evento/airbag/plano-celular.png"
             alt="plano Arjona"
           />
           <img
             className="hidden sm:block w-screen lg:hidden"
-            src="https://tuentrada.com/concierto/ricardo-arjona/plano-tabletvg.png"
+            src="https://tuentrada.com/evento/airbag/plano-tablet.png"
             alt="plano Arjona"
           />
           <img
             className="hidden  lg:block w-screen"
-            src="https://tuentrada.com/concierto/ricardo-arjona/plano-computadoravg.png"
+            src="https://tuentrada.com/evento/airbag/plano-escritorio.png"
             alt="plano Arjona"
           />
         </div>

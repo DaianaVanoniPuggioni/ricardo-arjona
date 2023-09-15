@@ -72,7 +72,19 @@ export const Footer = () => {
         </a>
       </div>
       <span className="text-xs">
-      "DISPONIBLE PARA CARTERA DE CONSUMO Y COMERCIAL COSTO FINANCIERO TOTAL EFECTIVO ANUAL: C.F.T.E. A  C.F.T.E.A: 2,14% (para cartera comercial por ""seguro de vida e invalidez total o permanente"") C.F.T.E.A: 0% (para cartera de consumo) TASA FIJA NOMINAL ANUAL: 0%. TASA EFECTIVA ANUAL: 0%. Vigencia del 05/07/23 hasta el 15/09/23. Promoción valida sólo para Tarjeta Santander American Express. Preventa del 05/07/23 a las 10 am por 48 hs o hasta agotar stock, lo que suceda primero. Stock preventa: 10.000 tickets. Cupo máximo de 4 entradas por cliente. Ejemplo: Una compra de $12.000 realizada con su Tarjeta Santander American Express, podrá ser financiada en 6 cuotas de $2.000 cada una. Promoción válida sobre el valor de entradas. No incluye cargo por servicio. A los clientes de la cartera comercial, se les debitará como rubro ""seguro de vida e invalidez total y permanente"" la suma de $22,56 que será distribuida en los primeros 6 resúmenes conforme al saldo de deuda que registre. Los accionistas de Banco Santander Argentina S.A. no responden en exceso de su integración accionaria. </span>
+      INFORMACIÓN MENORES: Ingreso a partir de los 3 años, abonando entrada. Prohibido el ingreso a Menores de 3 años
+
+TuEntrada se toma muy en serio la problemática causada por la reventa de entradas.
+
+Ud. debe cumplir con el límite en la cantidad de entradas que cada usuario puede comprar para este evento. Si usted realiza cualquier tipo de maniobra para exceder el límite de compra, TuEntrada puede a su discreción, cancelar cualquiera o todas las órdenes de compra sin previo aviso. Esto incluye las órdenes de compra realizadas con distintos nombres de usuario pero asociadas con el mismo nombre, dirección de email, dirección postal personal, número de tarjeta de crédito o débito, etc. <br />
+
+Los datos del titular de la tarjeta deberán coincidir con los datos del usuario de la cuenta de TuEntrada. Caso contrario, TuEntrada tiene derecho a cancelar la compra.
+<br />
+No adquiera entradas para este evento en sitios web de reventa de entradas tales como Viagogo, MercadoLibre, Rowticket, Ticketgo, o similares. Las entradas ofrecidas para reventa en tales sitios pueden ser falsas o, aunque fueran originales, podrían haber sido perdidas, robadas, anuladas o canceladas. TuEntrada no tiene vínculo alguno con esos sitios de reventa y no se responsabiliza por las entradas que seas adquiridas por tales medios.
+
+Durante el proceso de compra se le ofrecerá el Servicio de Protege TuEntrada que extiende los Términos y Condiciones. Usted podrá optar por seleccionar no adquirir el servicio.  
+
+TuEntrada percibe un "Cargo por Servicio" en contraprestación por el servicio brindado por TuEntrada al cliente para acceder a la compra de entradas para eventos a través de Internet. Previo al pago, podrá ver el Resumen de la compra con el detalle de la orden de compra y el monto total de la compra. El cliente tiene la opción de comprar las entradas en la boletería del teatro/sala/estadio sin pago de “cargo por servicio”. </span>
     </section>
   );
 };

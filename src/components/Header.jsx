@@ -21,12 +21,12 @@ export const Header = () => {
         // style={{
         //   backgroundImage: `url("https://www.tuentrada.com/concierto/rauw-alejandro/banner.png"})`,
         // }}
-      style={{padding:" 0 20px"}} >
-        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/ricardo-arjona/900x800v3.webp" alt="Ricardo Arjona" />
-        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/ricardo-arjona/800x400v3.webp" alt="Ricardo Arjona" />
-        <img className="hidden  lg:block w-screen"  src="https://tuentrada.com/concierto/ricardo-arjona/1920x710v3.webp" alt="Ricardo Arjona" />
-        <h1 className="hidden">Ricardo Arjona</h1>
-        <h2 className="hidden">Parque Sarmiento</h2>
+      >
+        <img className="sm:block md:hidden" src="https://tuentrada.com/evento/airbag/Airbag-900x800.jpg" alt="Ricardo Arjona" />
+        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/evento/airbag/Airbag-800x400.jpg" alt="Ricardo Arjona" />
+        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/evento/airbag/airbag-escritorio.webp" alt="Ricardo Arjona" />
+        <h1 className="hidden">AIRBAG</h1>
+        <h2 className="hidden">Estadio Velez Sarfield</h2>
           
         {/* <div
           className={`min-h-[50vh] flex justify-center items-start flex-col `}
