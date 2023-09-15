@@ -72,7 +72,7 @@ export const Footer = () => {
         </a>
       </div>
       <span className="text-xs">
-      INFORMACIÓN MENORES: Ingreso a partir de los 3 años, abonando entrada. Prohibido el ingreso a Menores de 3 años
+   
 
 TuEntrada se toma muy en serio la problemática causada por la reventa de entradas.
 
