@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/airbag">
+    <BrowserRouter basename="/ysy-a">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/*">
