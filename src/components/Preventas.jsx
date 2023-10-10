@@ -85,7 +85,7 @@ export const Preventas = () => {
   return (
     <section className="text-white container mx-auto pt-10">
       <div className="flex flex-col items-center justify-center  lg:gap-9 md:border-2 border-white lg:p-10 p-2 ">
-        <h3 className="text-2xl lg:text-4xl mb-3 lg:mb-0 text-center font-bold py-10">17 DICIEMBRE | ESTADIO VELEZ</h3>
+        <h3 className="text-2xl lg:text-4xl mb-3 lg:mb-0 text-center font-bold py-10">17 DICIEMBRE | ESTADIO HURACÁN</h3>
 
         {!button && (
         <>
@@ -126,7 +126,7 @@ export const Preventas = () => {
               <strong>
                 Anticipate: Registrate o actualizá tus datos haciendo
                 <a
-                  target="blank"
+                  target="_blank"
                   className="underline inline-block ml-1 hover:text-gray-300"
                   href="https://eventos.tuentrada.com/account/login"
                 >
@@ -135,7 +135,7 @@ export const Preventas = () => {
                 <br /> <br />
               </strong>
             </p>
-            <a     target="_new"      className={` bg-transparent border-white border hover:bg-white hover:text-black  text-base text-white py-2 px-5  md:px-10 rounded-full`}
+            <a target="_new" className={` bg-transparent border-white border hover:bg-white hover:text-black  text-base text-white py-2 px-5  md:px-10 rounded-full`}
  href="https://tuentrada.com/concierto/ysy-a/plano.png">Ver Ubicaciones</a>
             <hr className="border border-white" />
             {/* <p className="text-base lg:text-lg">
