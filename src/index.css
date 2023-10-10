@@ -9,7 +9,7 @@ body{
 
 .bg-1{
  
-    background-image:linear-gradient(rgb(184, 52, 26), rgb(132, 17, 76), rgb(55, 7, 87));
+    background-image:linear-gradient(#ab2219, #3d0c04, #000);
     background-size: cover;
     background-repeat: no-repeat;
   
@@ -18,14 +18,14 @@ body{
 .bg-2{
 
 
-  background-image: linear-gradient(rgb(55, 7, 87), rgb(132, 17, 76), rgb(184, 52, 26));
+  background-image: linear-gradient(#000, #3d0c04, #ab2219);
   
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .nav {
-  background:rgb(55, 7, 87);
+  background:#310300;
   background-size: cover;
   background-repeat: no-repeat;
 

@@ -5,51 +5,21 @@ export const DetalleSpotify = () => {
     <section className="text-white p-5 container mx-auto py-10 lg:py-10">
       <div className="text-white py-10 lg:py-10">
         <h3 className="text-2xl lg:text-4xl pb-10">
-          AIRBAG <br />
-          Jinetes Cromados Tour
+        ESTO ES UN SUEÑO, NOS VEMOS EL 17/12  
         </h3>
 
         <p className="text-base lg:text-xl">
-          Anuncia el show mas grande de su carrera la banda se presentara por
-          primera vez en el estadio velez y ya se empieza a palpitar una de las
-          fiestas del rock mas grandes del año
-        </p>
-        <p className="mt-5 mb-7 text-base lg:text-lg">
-          Patricio, Guido y Gaston Sardelli se presentaron por primera vez en el
-          Movistar Arena de Buenos Aires en mayo de este año, con dos shows
-          memorables ante más de 30 mil personas de diferentes rincones de
-          Argentina y países vecinos que se convocaron para ovacionarlos y
-          disfrutar de dos shows agotados y llenos de éxitos. En julio
-          realizaron una muy exitosa gira por España que los llevó por
-          Barcelona, Madrid, Alicante, Valencia y Mallorca, descubriendo nuevos
-          escenarios y públicos, demostrando la firmeza de su identidad
-          artística y el impacto que tiene en la escena musical.
-          <br />
-          <br />
-          Durante el 2022 Airbag pasó por los principales festivales de nuestro
-          país tales como el Cosquín Rock, Quilmes Rock y Lollapalooza. Transitó
-          una extensa gira Latinoamericana “JINETES CROMADOS TOUR” que lo llevó
-          por las principales ciudades de Argentina, Uruguay y México, en donde
-          el éxito fue rotundo, tras una serie de multitudinarios conciertos,
-          realizaron una presentación en octubre en el Lunario del Auditorio
-          Nacional.
-          <br />
-          <br />
-          La agrupación viene de un gran período de reconocimiento y
-          gratificación, habiendo tocado por primera vez en el Estadio
-          Argentinos Juniors en un show histórico de la banda, ante más de
-          30.000 personas, además de llenar 5 Luna Park agotados en cuestión de
-          horas, con una convocatoria descomunal. En mayo de este año redoblaron
-          la apuesta convocando a más de 30 mil fans en sus primeros Movistar
-          Arena, con dos noches inolvidables y un despliegue musical
-          inigualable.
-          <br />
-          <br />
-          Airbag no detiene su crecimiento, y su contacto con el público es un
-          motor creativo que los lleva siempre a un paso adelante demostrando su
-          inmenso talento y afianzando el liderazgo en la escena musical
-          Latinoamericana que han logrado en este tiempo.
-          <br />
+      
+
+MI PRIMER CANCHA DE FÚTBOL, PRESENTACIÓN DEL DISCO DEL 11/11, CIERRE DE YSYSMO, TODOS LOS CLÁSICOS…
+<br /><br />
+PREVENTA OFICIAL ESTE MIÉRCOLES 18HS POR <a href="https://n1u.app/">@n1u.app</a>
+<br />
+VENTA OFICIAL ESTE VIERNES 18HS!!!
+<br />
+BUENOS AIRES HAGAMOS HISTORIA UNA VEZ MÁS
+<br />
+YSY 
         </p>
 
         {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -134,7 +104,7 @@ export const DetalleSpotify = () => {
           </div>
         </div> */}
 
-        <div className="text-white pt-10">
+        {/* <div className="text-white pt-10">
           <h3 className="text-2xl lg:text-4xl pb-10 pt-10">Sobre Dale Play </h3>
           <p>
             Dale Play es de las mayores empresas de entretenimiento en
@@ -161,7 +131,7 @@ export const DetalleSpotify = () => {
             España, US y México expandiéndose así globalmente.
           </p>
           <br />
-        </div>
+        </div> */}
       </div>
     </section>
   );

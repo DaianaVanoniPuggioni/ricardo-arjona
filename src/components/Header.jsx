@@ -22,7 +22,7 @@ export const Header = () => {
         //   backgroundImage: `url("https://www.tuentrada.com/concierto/rauw-alejandro/banner.png"})`,
         // }}
       >
-        <img className="sm:block md:hidden" src="https://tuentrada.com/evento/airbag/Airbag-900x800.jpg" alt="Ricardo Arjona" />
+        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/ysy-a/ysy-a-mobile.jpg" alt="Ricardo Arjona" />
         <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/evento/airbag/Airbag-800x400.jpg" alt="Ricardo Arjona" />
         <img className="hidden  lg:block w-full"  src="https://tuentrada.com/evento/airbag/airbag-escritorio.webp" alt="Ricardo Arjona" />
         <h1 className="hidden">AIRBAG</h1>
