@@ -13,7 +13,7 @@ export const DetalleSpotify = () => {
 
 MI PRIMER CANCHA DE FÚTBOL, PRESENTACIÓN DEL DISCO DEL 11/11, CIERRE DE YSYSMO, TODOS LOS CLÁSICOS…
 <br /><br />
-PREVENTA OFICIAL ESTE MIÉRCOLES 18HS POR <a href="https://n1u.app/">@n1u.app</a>
+PREVENTA OFICIAL ESTE MIÉRCOLES 18HS POR <a target="_blank" href="https://n1u.app/">@n1u.app</a>
 <br />
 VENTA OFICIAL ESTE VIERNES 18HS!!!
 <br />
