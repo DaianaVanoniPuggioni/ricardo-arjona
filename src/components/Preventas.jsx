@@ -4,7 +4,7 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA_17DIC } = getEnvVariables();
+const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA } = getEnvVariables();
 // const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
 // const dateToCompare = new Date(pruebaDateToCompare);
@@ -101,7 +101,7 @@ export const Preventas = () => {
         </>
       )}
         
-        {button && <BotonComprar href={`https://filavirtual.tuentrada.com/secured/selection/event/date?productId=${VITE_ID_VENTA_17DIC}`} />}
+        {button && <BotonComprar href={`https://filavirtual.tuentrada.com/secured/selection/event/date?productId=${VITE_ID_VENTA}`} />}
        
       </div>
       
