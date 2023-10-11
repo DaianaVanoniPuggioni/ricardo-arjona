@@ -142,7 +142,8 @@ export const Preventas = () => {
             <a
               target="_new"
               className={` bg-transparent border-white border hover:bg-white hover:text-black  text-base text-white py-2 px-5  md:px-10 rounded-full`}
-              href="https://tuentrada.com/concierto/ysy-a/plano.png"
+              href="https://tuentrada.com/concierto/ysy-a/plano.webp"
+              rel="noreferrer"
             >
               Ver Ubicaciones
             </a>
@@ -160,12 +161,13 @@ export const Preventas = () => {
             <a
               target="_new"
               href="https://www.instagram.com/stories/highlights/18392541697005748/"
+              rel="noreferrer"
             >
               {" "}
               <img
                 className="w-[200] md:sm:w-[200px] lg:w-[40%] xl:w-[35%]"
-                src="https://tuentrada.com/concierto/ysy-a/preventa.png"
-                alt=""
+                src="https://tuentrada.com/concierto/ysy-a/preventa.webp"
+                alt="preventa ysy a"
               />
             </a>
             {/* <h3 className="text-2xl lg:text-4xl py-10">
