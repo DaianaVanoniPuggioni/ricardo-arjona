@@ -12,7 +12,7 @@ export const DetalleConcierto = () => {
         <div className="space-y-3 pt-10 lg:pt-0">
           <h5 className="text-xl lg:text-2xl">Fecha y hora</h5>
           <hr className="border border-white" />
-          <p className="text-base lg:text-lg">17 de Diciembre 2023, 17:00 hs</p>
+          <p className="text-base lg:text-lg">17 de Diciembre 2023 <br /> Puertas: 17:00 horas</p>
           
         </div>
       </div>
