@@ -22,11 +22,11 @@ export const Header = () => {
         //   backgroundImage: `url("https://www.tuentrada.com/concierto/rauw-alejandro/banner.png"})`,
         // }}
       >
-        <img className="sm:block md:hidden" src="https://tuentrada.com/evento/airbag/Airbag-900x800.jpg" alt="Ricardo Arjona" />
-        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/evento/airbag/Airbag-800x400.jpg" alt="Ricardo Arjona" />
-        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/evento/airbag/airbag-escritorio.webp" alt="Ricardo Arjona" />
-        <h1 className="hidden">AIRBAG</h1>
-        <h2 className="hidden">Estadio Velez Sarfield</h2>
+        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/ysy-a/ysy-celular.webp" alt="ysy a" />
+        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/ysy-a/ysy-tablet.webp" alt="ysy a" />
+        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/concierto/ysy-a/ysy-escritorio.webp" alt="ysy a" />
+        <h1 className="hidden">YSY-A</h1>
+        <h2 className="hidden">Estadio Huracán</h2>
           
         {/* <div
           className={`min-h-[50vh] flex justify-center items-start flex-col `}

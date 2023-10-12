@@ -74,17 +74,23 @@ export const Footer = () => {
       <span className="text-xs">
    
 
-TuEntrada se toma muy en serio la problemática causada por la reventa de entradas.
-
-Ud. debe cumplir con el límite en la cantidad de entradas que cada usuario puede comprar para este evento. Si usted realiza cualquier tipo de maniobra para exceder el límite de compra, TuEntrada puede a su discreción, cancelar cualquiera o todas las órdenes de compra sin previo aviso. Esto incluye las órdenes de compra realizadas con distintos nombres de usuario pero asociadas con el mismo nombre, dirección de email, dirección postal personal, número de tarjeta de crédito o débito, etc. <br />
-
-Los datos del titular de la tarjeta deberán coincidir con los datos del usuario de la cuenta de TuEntrada. Caso contrario, TuEntrada tiene derecho a cancelar la compra.
-<br />
-No adquiera entradas para este evento en sitios web de reventa de entradas tales como Viagogo, MercadoLibre, Rowticket, Ticketgo, o similares. Las entradas ofrecidas para reventa en tales sitios pueden ser falsas o, aunque fueran originales, podrían haber sido perdidas, robadas, anuladas o canceladas. TuEntrada no tiene vínculo alguno con esos sitios de reventa y no se responsabiliza por las entradas que seas adquiridas por tales medios.
-
-Durante el proceso de compra se le ofrecerá el Servicio de Protege TuEntrada que extiende los Términos y Condiciones. Usted podrá optar por seleccionar no adquirir el servicio.  
-
-TuEntrada percibe un "Cargo por Servicio" en contraprestación por el servicio brindado por TuEntrada al cliente para acceder a la compra de entradas para eventos a través de Internet. Previo al pago, podrá ver el Resumen de la compra con el detalle de la orden de compra y el monto total de la compra. El cliente tiene la opción de comprar las entradas en la boletería del teatro/sala/estadio sin pago de “cargo por servicio”. </span>
+      PREVENTA EXCLUSIVA DE ENTRADAS PARA CLIENTES N1U DESDE EL 11/10/2023 A LAS 18 HS
+AL 13/10/2023 HASTA LAS 17:30 HS O HASTA AGOTAR STOCK, LO QUE SUCEDA PRIMERO,
+PARA COMPRAS CON TARJETA PREPAGA N1U VISA FÍSICA O VIRTUAL. PODRÁ ADQUIRIR SUS
+ENTRADAS A TRAVÉS DE https://www.tuentrada.com/ , STOCK DISPONIBLE DE ENTRADAS:
+11.000.- <br />
+LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO DE FAMILIAR. TOPE DE
+VENTA POR PERSONA: 2 (DOS) TICKETS. <br />
+PARA MÁS INFORMACIÓN CONTACTARSE CON AYUDA@N1U.APP
+BLOCKCHAIN PAYMENTS RAILS S.A ES UNA SOCIEDAD ANÓNIMA BAJO LA LEY ARGENTINA LOS
+SOCIOS LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS.
+(LEY 25738). <br />
+N1U SE ENCUENTRA LIMITADA A OFRECER SERVICIOS DE PAGO Y NO SE ENCUENTRA
+AUTORIZADA A OPERAR COMO ENTIDAD FINANCIERA POR EL BCRA. <br />
+LOS FONDOS DEPOSITADOS EN LAS CUENTAS DE PAGO OFRECIDAS POR N1U, NO
+CONSTITUYEN DEPÓSITOS EN UNA ENTIDAD FINANCIERA, NI CUENTAN CON NINGUNA DE LAS
+GARANTÍAS QUE TALES DEPÓSITOS PUEDAN GOZAR DE ACUERDO CON LA LEGISLACIÓN Y
+REGLAMENTACIÓN APLICABLES EN MATERIA DE DEPÓSITOS EN ENTIDADES FINANCIERAS.</span>
     </section>
   );
 };

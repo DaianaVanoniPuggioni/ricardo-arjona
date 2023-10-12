@@ -4,7 +4,7 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA_15DIC } = getEnvVariables();
+const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA } = getEnvVariables();
 // const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
 // const dateToCompare = new Date(pruebaDateToCompare);
@@ -85,27 +85,30 @@ export const Preventas = () => {
   return (
     <section className="text-white container mx-auto pt-10">
       <div className="flex flex-col items-center justify-center  lg:gap-9 md:border-2 border-white lg:p-10 p-2 ">
-        <h3 className="text-2xl lg:text-4xl mb-3 lg:mb-0 text-center font-bold py-10">15 DICIEMBRE | ESTADIO VELEZ</h3>
+        <h3 className="text-2xl lg:text-4xl mb-3 lg:mb-0 text-center font-bold py-10">
+          17 DICIEMBRE | ESTADIO HURACÁN
+        </h3>
 
         {!button && (
-        <>
-          <div>
-            {/* <h3 className="text-2xl lg:text-4xl text-center">16 de septiembre</h3> */}
-            <div className="flex pt-5 justify-center px-2 gap-1 ">
-              <CardsHorario texto={"Día"} num={days} />
-              <CardsHorario texto={"Hs"} num={hours} />
-              <CardsHorario texto={"Min"} num={minutes} />
-              <CardsHorario texto={"Seg"} num={seconds} />
+          <>
+            <div>
+              {/* <h3 className="text-2xl lg:text-4xl text-center">16 de septiembre</h3> */}
+              <div className="flex pt-5 justify-center px-2 gap-1 ">
+                <CardsHorario texto={"Día"} num={days} />
+                <CardsHorario texto={"Hs"} num={hours} />
+                <CardsHorario texto={"Min"} num={minutes} />
+                <CardsHorario texto={"Seg"} num={seconds} />
+              </div>
             </div>
-          </div>
-        </>
-      )}
-        
-        {button && <BotonComprar href={`https://filavirtual.tuentrada.com/secured/selection/event/date?productId=${VITE_ID_VENTA_15DIC}`} />}
-       
+          </>
+        )}
+
+        {button && (
+          <BotonComprar
+            href={`https://filavirtual.tuentrada.com/secured/selection/event/date?productId=${VITE_ID_VENTA}`}
+          />
+        )}
       </div>
-      
-     
 
       {/* Código comentado */}
       {/* {button ? (
@@ -126,15 +129,24 @@ export const Preventas = () => {
               <strong>
                 Anticipate: Registrate o actualizá tus datos haciendo
                 <a
-                  target="blank"
+                  target="_blank"
                   className="underline inline-block ml-1 hover:text-gray-300"
-                  href="https://filavirtual.tuentrada.com/account/login"
+                  href="https://eventos.tuentrada.com/account/login"
+                  rel="noreferrer"
                 >
                   CLICK AQUÍ
                 </a>{" "}
                 <br /> <br />
               </strong>
             </p>
+            <a
+              target="_new"
+              className={` bg-transparent border-white border hover:bg-white hover:text-black  text-base text-white py-2 px-5  md:px-10 rounded-full`}
+              href="https://tuentrada.com/concierto/ysy-a/plano.webp"
+              rel="noreferrer"
+            >
+              Ver Ubicaciones
+            </a>
             <hr className="border border-white" />
             {/* <p className="text-base lg:text-lg">
               Preventa exclusiva tarjeta Santander American Express: Miércoles
@@ -146,17 +158,24 @@ export const Preventas = () => {
               <br />
               Finalizada la preventa comenzará la venta general.
             </p> */}
-            <img
-             className="w-[250] md:sm:w-[250px] lg:w-[50%] xl:w-[35%] "
-              src="https://tuentrada.com/evento/airbag/cuotas-1.png"
-              alt=""
-            />
-            <h3 className="text-2xl lg:text-4xl py-10">
+            <a
+              target="_new"
+              href="https://www.instagram.com/stories/highlights/18392541697005748/"
+              rel="noreferrer"
+            >
+              {" "}
+              <img
+                className="w-[200] md:sm:w-[200px] lg:w-[40%] xl:w-[35%]"
+                src="https://tuentrada.com/concierto/ysy-a/preventa.webp"
+                alt="preventa ysy a"
+              />
+            </a>
+            {/* <h3 className="text-2xl lg:text-4xl py-10">
               Ubicaciones y precios
-            </h3>
+            </h3> */}
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
+        {/* <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
           <img
             className="block sm:hidden"
             src="https://tuentrada.com/evento/airbag/plano-celular.png"
@@ -172,7 +191,7 @@ export const Preventas = () => {
             src="https://tuentrada.com/evento/airbag/plano-escritorio.png"
             alt="plano Arjona"
           />
-        </div>
+        </div> */}
       </section>
     </section>
   );

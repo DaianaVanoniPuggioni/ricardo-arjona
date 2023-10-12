@@ -6,21 +6,21 @@ export const DetalleConcierto = () => {
         <div className="space-y-3">
           <h5 className="text-xl lg:text-2xl">Dirección</h5>
           <hr className="border border-white" />
-          <p className="text-base lg:text-lg">Estadio Velez Sarfield</p>
-          <p className="text-base lg:text-lg">Av. Juan B. Justo 9200, CABA</p>
+          <p className="text-base lg:text-lg">Estadio Huracán</p>
+          <p className="text-base lg:text-lg">Av. Amancio Alcorta 2544, CABA</p>
         </div>
         <div className="space-y-3 pt-10 lg:pt-0">
           <h5 className="text-xl lg:text-2xl">Fecha y hora</h5>
           <hr className="border border-white" />
-          <p className="text-base lg:text-lg">15 de Diciembre 2023, 20:30 hs</p>
+          <p className="text-base lg:text-lg">17 de Diciembre 2023 <br /> Puertas: 17:00 horas</p>
           
         </div>
       </div>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7640857977963!2d-58.523271726386994!3d-34.63540155916851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8382fb08ab9%3A0xea0ca78972856a8e!2sEstadio%20Jos%C3%A9%20Amalfitani!5e0!3m2!1ses!2sar!4v1688482549178!5m2!1ses!2sar"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.310773908684!2d-58.3983169549184!3d-34.643891433499576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6aeed57bd3%3A0xe5cec50209b9c4ad!2sEstadio%20Tom%C3%A1s%20Adolfo%20Duc%C3%B3!5e0!3m2!1ses!2sar!4v1696958512834!5m2!1ses!2sar"
         width="100%"
         height="300"
-        style={{ border: "0", filter: "hue-rotate(170deg)" }}
+        style={{ border: "0", filter: "hue-rotate(350deg)" }}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
