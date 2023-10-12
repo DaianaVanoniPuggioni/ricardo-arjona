@@ -4,7 +4,7 @@ import { BotonComprar } from "./";
 import { getEnvVariables } from "../helpers/getEnvVariables";
 import { InfoContext } from "../context/InfoProviders";
 
-const { VITE_DATE, VITE_API_GEO, VITE_ID_VENTA } = getEnvVariables();
+const { VITE_DATE, VITE_ID_VENTA } = getEnvVariables();
 // const pruebaDateToCompare = "Wed Jul 5 2023 10:00:00 GMT-0300"
 
 // const dateToCompare = new Date(pruebaDateToCompare);
@@ -16,36 +16,36 @@ export const Preventas = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  const [time, setTime] = useState(0);
+  const [time, setTime] = useState(new Date());
   const [isLoading, setIsLoading] = useState(true);
 
   // const { isLoading, time } = useContext(InfoContext);
 
-  useEffect(() => {
-    if (button === true) return;
-    const getData = async () => {
-      setIsLoading(true);
-      try {
-        const response = await fetch(VITE_API_GEO);
-        if (!response.ok) {
-          setTime(new Date());
-          return;
-        }
-        const data = await response.json();
-        const currentDateTime = new Date(data.datetime);
-        setTime(currentDateTime);
-      } catch (error) {
-        setTime(new Date());
-        throw new Error(error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    getData();
-  }, [button]);
+  // useEffect(() => {
+  //   if (button === true) return;
+  //   const getData = async () => {
+  //     setIsLoading(true);
+  //     try {
+  //       const response = await fetch(VITE_API_GEO);
+  //       if (!response.ok) {
+  //         setTime(new Date());
+  //         return;
+  //       }
+  //       const data = await response.json();
+  //       const currentDateTime = new Date(data.datetime);
+  //       setTime(currentDateTime);
+  //     } catch (error) {
+  //       setTime(new Date());
+  //       throw new Error(error);
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   };
+  //   getData();
+  // }, [button]);
 
   useEffect(() => {
-    if (time === 0) return;
+    if (time === 0 || button === true) return;
     // console.log('wuef worker')
 
     const worker = new Worker(
@@ -119,20 +119,17 @@ export const Preventas = () => {
 
       <section className="text-white p-5 container mx-auto  lg:py-10">
         <div className="my-5">
-          <div className="space-y-10">
+          <div className="space-y-5">
             <p className="text-base lg:text-lg">
               Recordá que los datos de la cuenta y la tarjeta de crédito/débito
               deben coincidir. <br /> <br />
               No es necesario actualizar la página una vez que finalice el
-              contador. <br /> <br />
-              <hr className="border border-white" />
-              <br />
-              <strong>
-               {" "}
-            
-              </strong>
+              contador.
             </p>
+              <hr className="border border-white" />
             
+              <br />
+             
             <a
               target="_new"
               className={` bg-transparent border-white border hover:bg-white hover:text-black  text-base text-white py-2 px-5  md:px-10 rounded-full`}
