@@ -72,25 +72,9 @@ export const Footer = () => {
         </a>
       </div>
       <span className="text-xs">
-   
+      La compra de Entradas a través del Sitio podrá ser realizada únicamente por el Cliente registrado en el Sitio mediante el uso de Tarjetas de Crédito y/o Tarjetas de Débito (en adelante, las "Tarjetas") personales del Cliente del Sitio. Se encuentra prohibido el uso de Tarjetas de Crédito y/o de Tarjetas de Débito que no sean de propiedad del Cliente registrado en el Sitio. A fin de adquirir Entradas el Cliente deberá completar el formulario de registración al cual se accede a través del enlace denominado "datos de compra" ubicado en el Sitio (en adelante, el "Formulario de Registración"). El Formulario de Registración deberá ser completado en todos sus campos con información personal del Cliente que deberá ser exacta, precisa y verdadera (en adelante, "Datos Personales"). El Cliente asume el compromiso de actualizar los Datos Personales conforme resulte necesario. El Cliente acepta haber proporcionado toda la información real personal requerida, y es él únicamente responsable por la información que no sea real allí registrada. Quien suministre información falsa o inexacta, o use su entrada para falsificaciones, adulteraciones o defraudaciones, será responsable en los términos de las leyes Argentinas. Las compras realizadas por el sistema TuEntrada mediante el uso de Tarjetas, están sujetas a la verificación de los datos personales del Cliente y titular de la Tarjeta y aceptación de la transacción por parte de la entidad financiera emisora de la Tarjeta. TuEntrada se reserva el derecho a cobrar al Cliente costos adicionales para la verificación de los datos del titular de la Tarjeta a fin de evitar maniobras de defraudación a terceros.
 
-      PREVENTA EXCLUSIVA DE ENTRADAS PARA CLIENTES N1U DESDE EL 11/10/2023 A LAS 18 HS
-AL 13/10/2023 HASTA LAS 17:30 HS O HASTA AGOTAR STOCK, LO QUE SUCEDA PRIMERO,
-PARA COMPRAS CON TARJETA PREPAGA N1U VISA FÍSICA O VIRTUAL. PODRÁ ADQUIRIR SUS
-ENTRADAS A TRAVÉS DE https://www.tuentrada.com/ , STOCK DISPONIBLE DE ENTRADAS:
-11.000.- <br />
-LA PRESENTE PROMOCIÓN ES VÁLIDA SÓLO PARA CONSUMOS DE TIPO DE FAMILIAR. TOPE DE
-VENTA POR PERSONA: 2 (DOS) TICKETS. <br />
-PARA MÁS INFORMACIÓN CONTACTARSE CON AYUDA@N1U.APP
-BLOCKCHAIN PAYMENTS RAILS S.A ES UNA SOCIEDAD ANÓNIMA BAJO LA LEY ARGENTINA LOS
-SOCIOS LIMITAN SU RESPONSABILIDAD A LA INTEGRACIÓN DE LAS ACCIONES SUSCRIPTAS.
-(LEY 25738). <br />
-N1U SE ENCUENTRA LIMITADA A OFRECER SERVICIOS DE PAGO Y NO SE ENCUENTRA
-AUTORIZADA A OPERAR COMO ENTIDAD FINANCIERA POR EL BCRA. <br />
-LOS FONDOS DEPOSITADOS EN LAS CUENTAS DE PAGO OFRECIDAS POR N1U, NO
-CONSTITUYEN DEPÓSITOS EN UNA ENTIDAD FINANCIERA, NI CUENTAN CON NINGUNA DE LAS
-GARANTÍAS QUE TALES DEPÓSITOS PUEDAN GOZAR DE ACUERDO CON LA LEGISLACIÓN Y
-REGLAMENTACIÓN APLICABLES EN MATERIA DE DEPÓSITOS EN ENTIDADES FINANCIERAS.</span>
+     </span>
     </section>
   );
 };

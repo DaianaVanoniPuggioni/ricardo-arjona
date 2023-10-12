@@ -124,21 +124,15 @@ export const Preventas = () => {
               Recordá que los datos de la cuenta y la tarjeta de crédito/débito
               deben coincidir. <br /> <br />
               No es necesario actualizar la página una vez que finalice el
-              contador. <br />
+              contador. <br /> <br />
+              <hr className="border border-white" />
               <br />
               <strong>
-                Anticipate: Registrate o actualizá tus datos haciendo
-                <a
-                  target="_blank"
-                  className="underline inline-block ml-1 hover:text-gray-300"
-                  href="https://eventos.tuentrada.com/account/login"
-                  rel="noreferrer"
-                >
-                  CLICK AQUÍ
-                </a>{" "}
-                <br /> <br />
+               {" "}
+            
               </strong>
             </p>
+            
             <a
               target="_new"
               className={` bg-transparent border-white border hover:bg-white hover:text-black  text-base text-white py-2 px-5  md:px-10 rounded-full`}
@@ -147,7 +141,7 @@ export const Preventas = () => {
             >
               Ver Ubicaciones
             </a>
-            <hr className="border border-white" />
+            
             {/* <p className="text-base lg:text-lg">
               Preventa exclusiva tarjeta Santander American Express: Miércoles
               5/7 - 10:00 hs – durante 48 hs o hasta agotar stock.
@@ -158,7 +152,7 @@ export const Preventas = () => {
               <br />
               Finalizada la preventa comenzará la venta general.
             </p> */}
-            <a
+            {/* <a
               target="_new"
               href="https://www.instagram.com/stories/highlights/18392541697005748/"
               rel="noreferrer"
@@ -169,7 +163,7 @@ export const Preventas = () => {
                 src="https://tuentrada.com/concierto/ysy-a/preventa.webp"
                 alt="preventa ysy a"
               />
-            </a>
+            </a> */}
             {/* <h3 className="text-2xl lg:text-4xl py-10">
               Ubicaciones y precios
             </h3> */}
