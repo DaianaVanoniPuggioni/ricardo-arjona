@@ -71,10 +71,10 @@ export const Footer = () => {
           <p className="text-base lg:text-lg">TuEntrada Wallet</p>
         </a>
       </div>
-      <span className="text-xs">
+      {/* <span className="text-xs">
       La compra de Entradas a través del Sitio podrá ser realizada únicamente por el Cliente registrado en el Sitio mediante el uso de Tarjetas de Crédito y/o Tarjetas de Débito (en adelante, las "Tarjetas") personales del Cliente del Sitio. Se encuentra prohibido el uso de Tarjetas de Crédito y/o de Tarjetas de Débito que no sean de propiedad del Cliente registrado en el Sitio. A fin de adquirir Entradas el Cliente deberá completar el formulario de registración al cual se accede a través del enlace denominado "datos de compra" ubicado en el Sitio (en adelante, el "Formulario de Registración"). El Formulario de Registración deberá ser completado en todos sus campos con información personal del Cliente que deberá ser exacta, precisa y verdadera (en adelante, "Datos Personales"). El Cliente asume el compromiso de actualizar los Datos Personales conforme resulte necesario. El Cliente acepta haber proporcionado toda la información real personal requerida, y es él únicamente responsable por la información que no sea real allí registrada. Quien suministre información falsa o inexacta, o use su entrada para falsificaciones, adulteraciones o defraudaciones, será responsable en los términos de las leyes Argentinas. Las compras realizadas por el sistema TuEntrada mediante el uso de Tarjetas, están sujetas a la verificación de los datos personales del Cliente y titular de la Tarjeta y aceptación de la transacción por parte de la entidad financiera emisora de la Tarjeta. TuEntrada se reserva el derecho a cobrar al Cliente costos adicionales para la verificación de los datos del titular de la Tarjeta a fin de evitar maniobras de defraudación a terceros.
 
-     </span>
+     </span> */}
     </section>
   );
 };
