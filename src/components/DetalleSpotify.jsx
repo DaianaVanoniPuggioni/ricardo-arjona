@@ -2,11 +2,11 @@
 
 export const DetalleSpotify = () => {
   return (
-    <section className="text-white p-5 container mx-auto py-10 lg:py-10">
-      <div className="text-white py-10 lg:py-10">
+    <section className="text-white p-5 container mx-auto ">
+      <div className="text-white ">
      
 
-        <p className="text-base lg:text-xl">
+        {/* <p className="text-base lg:text-xl">
         La relación entre la música y la mística no es algo que deba tomarse a la ligera. Muchos artistas suelen exagerar ese vínculo, pero muy pocos son capaces de llevarlo de manera real. Existen lugares que son centrales para la historia de nuestra música popular. Lugares a los que muy pocos pueden llegar y que son capaces de ponernos la piel de gallina cuando recordamos los eventos musicales y culturales que allí sucedieron. Y será en uno de esos lugares donde YSY A vuelva a hacer historia el próximo domingo 17 de diciembre en el estadio de Huracán, con un show que ya desde su anuncio se plantea como uno de los momentos más importantes de la vida de Alejo Nahuel Acosta. <br /><br />
 Claro que el camino hacia el Tomás Adolfo Ducó no fue simple, aunque no por ello poco satisfactorio. Desde la independencia absoluta, eligiendo nadar contra la corriente en un momento en el que el dinero es lo que reina dentro de la configuración del algoritmo, YSY A pasó de crear y organizar El Quinto Escalón en el Parque Rivadavia a llenar venues y estadios en todo el mundo. De soñar con ser un rapero consagrado a que sea una satisfactoria realidad. Una consagración a nivel mundial que es vivida de una manera mucho más genuina: tanto él como su equipo tienen muy en claro que si las cosas salen mal, los únicos que pueden salvarse son ellos mismos. En esa hermandad, en esa vocación por el trabajo, es en la que se basa el ascenso de un artista lleno de talento y decisión que siempre peleó con uñas y dientes por su sueño. <br /><br />
 Y con ese orgullo es con el que el máximo referente del trap argentino va a llegar a una de las canchas más míticas del país, siendo este el máximo desafío hasta el día de la fecha dentro de una carrera que cada día agiganta su techo: “Esto valida el camino que vengo recorriendo, el de ser un artista sobre el escenario”. Porque YSY A aprovecha y disfruta de las tablas como ninguno y también sabe que el suyo es el pogo más grande e intenso del momento. Un artista que ama por igual tanto el estudio como el vivo: su carrera está marcada por una pulsión experimental que lo llevó a crear todas las tendencias sonoras mucho antes de que fuesen tendencia y a construir un sonido que es tan inclasificable como irresistible. <br /><br />
@@ -15,7 +15,7 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
 
 
 
-        </p>
+        </p> */}
 
         {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <img

@@ -86,7 +86,7 @@ export const Preventas = () => {
     <section className="text-white container mx-auto pt-10">
       <div className="flex flex-col items-center justify-center  lg:gap-9 md:border-2 border-white lg:p-10 p-2 ">
         <h3 className="text-2xl lg:text-4xl mb-3 lg:mb-0 text-center font-bold py-10">
-          17 DICIEMBRE | ESTADIO HURACÁN
+          8 JUNIO | ESTADIO ÚNICO DE LA PLATA
         </h3>
 
         {!button && (
@@ -105,7 +105,7 @@ export const Preventas = () => {
 
         {button && (
           <BotonComprar
-            href={`https://filavirtual.tuentrada.com/secured/selection/event/date?productId=${VITE_ID_VENTA}`}
+            href={`https://eventosgen1.tuentrada.com/secured/selection/event/date?productId=${VITE_ID_VENTA}`}
           />
         )}
       </div>

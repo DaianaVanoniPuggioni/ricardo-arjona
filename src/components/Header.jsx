@@ -22,11 +22,11 @@ export const Header = () => {
         //   backgroundImage: `url("https://www.tuentrada.com/concierto/rauw-alejandro/banner.png"})`,
         // }}
       >
-        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/ysy-a/ysy-celular-v2.webp" alt="ysy a" />
-        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/ysy-a/ysy-tablet-v2.webp" alt="ysy a" />
-        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/concierto/ysy-a/ysy-escritorio-v2.webp" alt="ysy a" />
-        <h1 className="hidden">YSY-A</h1>
-        <h2 className="hidden">Estadio Huracán</h2>
+        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/faa/fdaa-celular.webp" alt="ysy a" />
+        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/faa/fdaa-celular.webp" alt="ysy a" />
+        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/concierto/faa/fdaa-escritorio.webp" alt="ysy a" />
+        <h1 className="hidden">FUNDAMENTALISTAS DEL AIRE ACONDICIONADO</h1>
+        <h2 className="hidden">Estadio Único de La Plata</h2>
           
         {/* <div
           className={`min-h-[50vh] flex justify-center items-start flex-col `}
