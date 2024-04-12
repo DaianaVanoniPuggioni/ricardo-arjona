@@ -117,7 +117,7 @@ export const Preventas = () => {
         <BotonProximamente />
       )} */}
 
-      <section className="text-white p-5 container mx-auto  lg:py-10">
+      <section className="text-white p-5 container mx-auto  ">
         <div className="my-5">
           <div className="space-y-5">
             <p className="text-base lg:text-lg">
@@ -130,14 +130,14 @@ export const Preventas = () => {
             
               <br />
              
-            <a
+            {/* <a
               target="_new"
               className={` bg-transparent border-white border hover:bg-white hover:text-black  text-base text-white py-2 px-5  md:px-10 rounded-full`}
-              href="https://tuentrada.com/concierto/ysy-a/plano.webp"
+              href="https://tuentrada.com/concierto/faa/plano.png"
               rel="noreferrer"
             >
               Ver Ubicaciones
-            </a>
+            </a> */}
             
             {/* <p className="text-base lg:text-lg">
               Preventa exclusiva tarjeta Santander American Express: Miércoles
@@ -166,23 +166,14 @@ export const Preventas = () => {
             </h3> */}
           </div>
         </div>
-        {/* <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
+        <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
           <img
-            className="block sm:hidden"
-            src="https://tuentrada.com/evento/airbag/plano-celular.png"
+            className="block"
+            src="https://tuentrada.com/concierto/faa/plano.png"
             alt="plano Arjona"
           />
-          <img
-            className="hidden sm:block w-screen lg:hidden"
-            src="https://tuentrada.com/evento/airbag/plano-tablet.png"
-            alt="plano Arjona"
-          />
-          <img
-            className="hidden  lg:block w-screen"
-            src="https://tuentrada.com/evento/airbag/plano-escritorio.png"
-            alt="plano Arjona"
-          />
-        </div> */}
+       
+        </div>
       </section>
     </section>
   );

@@ -17,24 +17,7 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
 
         </p> */}
 
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <img
-            src="https://tuentrada.com/concierto/ricardo-arjona/img1.jpg"
-            alt=""
-          />
-          <img
-            src="https://tuentrada.com/concierto/ricardo-arjona/img2.jpg"
-            alt=""
-          />
-          <img
-            src="https://tuentrada.com/concierto/ricardo-arjona/img3.jpg"
-            alt=""
-          />
-          <img
-            src="https://tuentrada.com/concierto/ricardo-arjona/img4.jpg"
-            alt=""
-          />
-        </div> */}
+        
 
         {/* <h3 className="text-2xl lg:text-4xl pb-10 pt-20 ">
           Escúchalas en Spotify
@@ -99,34 +82,112 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
           </div>
         </div> */}
 
-        {/* <div className="text-white pt-10">
-          <h3 className="text-2xl lg:text-4xl pb-10 pt-10">Sobre Dale Play </h3>
+        <div className="text-white ">
+          <h3 className="text-2xl lg:text-4xl pb-10 ">Los Fundamentalistas del Aire Acondicionado </h3>
           <p>
-            Dale Play es de las mayores empresas de entretenimiento en
-            Hispanoamérica creada por el empresario de la industria musical
-            argentina Federico Lauria.
-            <br />
-            <br />
-            Con su principal foco en el desarrollo de artistas, Dale Play está
-            compuesta de tres unidades de negocio principales: Dale Play Live
-            (previamente Lauria Entertainment) | productora de shows en vivo con
-            casos de éxito como Bad Bunny, Daddy Yankee, Karol G, Residente,
-            Maluma, Luis Miguel, Camilo, entre otros grandes artistas.
-            <br />
-            <br />
-            Dale Play Management | Unidad dedicada al management y desarrollo de
-            artistas a nivel global encabezados por Duki, Bizarrap, Nicki
-            Nicole, Rels B y Lali.
-            <br />
-            <br />
-            Dale Play Records | Sello discográfico compuesto por los artistas
-            que lideran el movimiento musical de las nuevas generaciones
-            representado por nombres como Duki, Bizarrap, Nicki Nicole, Rels B,
-            Callejero Fino, Milo J, Rei, La Joaqui y con base en Argentina,
-            España, US y México expandiéndose así globalmente.
+       
+          Sábado 8 de Junio <br />
+En el Estadio Único Diego Armando Maradona de La Plata <br />
+¡ÚNICO SHOW!  <br /><br />
+
+ 
+
+Primera Preventa de entradas (por tiempo limitado) a partir del lunes 15/4 a las 18hs en tuentrada.com <br /><br />
+
+-Cabecera: $22.000 (+ costo de servicio) <br />
+-Campo: $26.000 (+ costo de servicio)<br />
+-Platea: $31.000  (+ costo de servicio)<br />
+<br />
+Y en puntos de venta, sin costo de servicio, partir del lunes 22/4 (stock limitado).<br />
+
+<br />
+
+PUNTOS DE VENTA <br /><br />
+
+CABA & BUENOS AIRES<br />
+"Groove"<br />
+Santa Fe 4389 <br />
+Lunes a Viernes de 10 a 18hs<br /><br />
+
+“MaxiDiosko”<br />
+Blanco Encalada 5029<br />
+Lunes a Sábado de 10 a 20hs<br /><br />
+
+SAN JUSTO<br />
+"El Búho Rock"<br />
+Arieta 3606<br />
+Lunes a Sábado de 10 a 18:30hs<br /><br />
+
+QUILMES<br />
+"La Estaka"<br />
+Rivadavia 334 Local 9<br />
+Lunes a Sábados de 12 a 18hs<br /><br />
+
+DON TORCUATO<br />
+"El Sabbath"<br />
+Paraguay 429<br />
+Lunes a Sábado de 10 a 18hs<br /><br />
+
+LA PLATA<br />
+"Jason"<br />
+Calle 6 N° 817 (e/48y49)<br />
+Lunes a Sábado de 12 a 18hs<br /><br />
+
+ROSARIO<br />
+"La Daga"<br />
+San Martín 867<br />
+Lunes a Viernes de 10.30 a 18hs y Sábados de 10.30 a 14hs <br /><br />
+
+CÓRDOBA<br />
+"Oktubre Rockería"<br />
+9 de Julio 150 - Local 7<br />
+Lunes a Viernes de 10 a 19hs<br /><br />
+
+SANTA FE<br />
+"Santa Fe Rock"<br />
+San Martín 2347, Galería Florida, Local 39 y 40<br />
+Lunes a Viernes de 9 a 13hs y de 16 a 20hs<br />
+Sábado de de 10 a 13 y de 17 a 20hs<br /><br />
+
+ 
+
+-Show ATP: Ingreso permitido a partir de los 7 años<br />
+<br />
+
+-Habrá un cupo limitado para personas con discapacidad. Deberán mandar un mail a <br />acreditacion@rockyreggae.com.ar<br /><br />
+
+(ingreso por orden de inscripción)<br />
+-Los que necesiten entradas al por mayor para micros, escriban a <br />microsfundamentalistas@gmail.com<br /><br />
+
+-Acreditaciones de prensa únicamente a <br /><br />
+
+luzespecheagencia@gmail.com cc: luismielniczuk@hotmail.com.ar <br /><br /><br />
+
+ 
+
+Gracias por la paciencia, estamos muy felices de volver a encontrarnos...<br /><br />
+
           </p>
-          <br />
-        </div> */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <img
+            src="https://tuentrada.com/concierto/faa/1.jpg"
+            alt=""
+          />
+          <img
+            src="https://tuentrada.com/concierto/faa/2.jpg"
+            alt=""
+          />
+          <img
+            src="https://tuentrada.com/concierto/faa/3.jpg"
+            alt=""
+          />
+          <img
+            src="https://tuentrada.com/concierto/faa/4.jpg"
+            alt=""
+          />
+        </div> 
+         
+        </div> 
       </div>
     </section>
   );
