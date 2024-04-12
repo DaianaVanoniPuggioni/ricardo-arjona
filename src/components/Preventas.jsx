@@ -105,7 +105,7 @@ export const Preventas = () => {
 
         {button && (
           <BotonComprar
-            href={`https://eventosgen1.tuentrada.com/secured/selection/event/date?productId=${VITE_ID_VENTA}`}
+            href={`${VITE_ID_VENTA}`}
           />
         )}
       </div>

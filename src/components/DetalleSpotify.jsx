@@ -168,8 +168,8 @@ luzespecheagencia@gmail.com cc: luismielniczuk@hotmail.com.ar <br /><br /><br />
 Gracias por la paciencia, estamos muy felices de volver a encontrarnos...<br /><br />
 
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <img
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 place-items-center">
+          <img style={{textAlign: "center"}}
             src="https://tuentrada.com/concierto/faa/1.jpg"
             alt=""
           />
