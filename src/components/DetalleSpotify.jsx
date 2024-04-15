@@ -85,7 +85,7 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
           <p>
             Sábado 8 de Junio <br />
             En el Estadio Único Diego Armando Maradona de La Plata <br />
-            ¡ÚNICO SHOW! <br />
+          
             <br />
           
             
