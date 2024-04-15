@@ -85,6 +85,7 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
           <p>
             Sábado 8 de Junio <br />
             En el Estadio Único Diego Armando Maradona de La Plata <br />
+            
           
             <br />
           
@@ -101,7 +102,7 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
             <br />
             <br />
             -Podes pagar con tarjeta MasterCard, Visa y Visa Débito <br />
-            <br />
+            
             <br />
             Próximamente vas a podes comprar en los siguientes puntos de venta
             físicos:
