@@ -100,8 +100,7 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
             descargar 48 horas antes del show.
             <br />
             <br />
-            -Podes pagar con tarjeta MasterCard, Visa y Visa Débito <br />  4 cuotas sin
-            interés con Banco Provincia
+            -Podes pagar con tarjeta MasterCard, Visa y Visa Débito <br />
             <br />
             <br />
             Próximamente vas a podes comprar en los siguientes puntos de venta
