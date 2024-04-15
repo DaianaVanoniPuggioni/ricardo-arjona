@@ -4,8 +4,6 @@ export const DetalleSpotify = () => {
   return (
     <section className="text-white p-5 container mx-auto ">
       <div className="text-white ">
-     
-
         {/* <p className="text-base lg:text-xl">
         La relación entre la música y la mística no es algo que deba tomarse a la ligera. Muchos artistas suelen exagerar ese vínculo, pero muy pocos son capaces de llevarlo de manera real. Existen lugares que son centrales para la historia de nuestra música popular. Lugares a los que muy pocos pueden llegar y que son capaces de ponernos la piel de gallina cuando recordamos los eventos musicales y culturales que allí sucedieron. Y será en uno de esos lugares donde YSY A vuelva a hacer historia el próximo domingo 17 de diciembre en el estadio de Huracán, con un show que ya desde su anuncio se plantea como uno de los momentos más importantes de la vida de Alejo Nahuel Acosta. <br /><br />
 Claro que el camino hacia el Tomás Adolfo Ducó no fue simple, aunque no por ello poco satisfactorio. Desde la independencia absoluta, eligiendo nadar contra la corriente en un momento en el que el dinero es lo que reina dentro de la configuración del algoritmo, YSY A pasó de crear y organizar El Quinto Escalón en el Parque Rivadavia a llenar venues y estadios en todo el mundo. De soñar con ser un rapero consagrado a que sea una satisfactoria realidad. Una consagración a nivel mundial que es vivida de una manera mucho más genuina: tanto él como su equipo tienen muy en claro que si las cosas salen mal, los únicos que pueden salvarse son ellos mismos. En esa hermandad, en esa vocación por el trabajo, es en la que se basa el ascenso de un artista lleno de talento y decisión que siempre peleó con uñas y dientes por su sueño. <br /><br />
@@ -16,8 +14,6 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
 
 
         </p> */}
-
-        
 
         {/* <h3 className="text-2xl lg:text-4xl pb-10 pt-20 ">
           Escúchalas en Spotify
@@ -83,111 +79,94 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
         </div> */}
 
         <div className="text-white ">
-          <h3 className="text-2xl lg:text-4xl pb-10 ">Los Fundamentalistas del Aire Acondicionado </h3>
+          <h3 className="text-2xl lg:text-4xl pb-10 ">
+            Los Fundamentalistas del Aire Acondicionado{" "}
+          </h3>
           <p>
-       
-          Sábado 8 de Junio <br />
-En el Estadio Único Diego Armando Maradona de La Plata <br />
-¡ÚNICO SHOW!  <br /><br />
-
- 
-
-Primera Preventa de entradas (por tiempo limitado) a partir del lunes 15/4 a las 18hs en tuentrada.com <br /><br />
-
--Cabecera: $22.000 (+ costo de servicio) <br />
--Campo: $26.000 (+ costo de servicio)<br />
--Platea: $31.000  (+ costo de servicio)<br />
-<br />
-Y en puntos de venta, sin costo de servicio, partir del lunes 22/4 (stock limitado).<br />
-
-<br />
-
-PUNTOS DE VENTA <br /><br />
-
-CABA & BUENOS AIRES<br />
-"Groove"<br />
-Santa Fe 4389 <br />
-Lunes a Viernes de 10 a 18hs<br /><br />
-
-“MaxiDiosko”<br />
-Blanco Encalada 5029<br />
-Lunes a Sábado de 10 a 20hs<br /><br />
-
-SAN JUSTO<br />
-"El Búho Rock"<br />
-Arieta 3606<br />
-Lunes a Sábado de 10 a 18:30hs<br /><br />
-
-QUILMES<br />
-"La Estaka"<br />
-Rivadavia 334 Local 9<br />
-Lunes a Sábados de 12 a 18hs<br /><br />
-
-DON TORCUATO<br />
-"El Sabbath"<br />
-Paraguay 429<br />
-Lunes a Sábado de 10 a 18hs<br /><br />
-
-LA PLATA<br />
-"Jason"<br />
-Calle 6 N° 817 (e/48y49)<br />
-Lunes a Sábado de 12 a 18hs<br /><br />
-
-ROSARIO<br />
-"La Daga"<br />
-San Martín 867<br />
-Lunes a Viernes de 10.30 a 18hs y Sábados de 10.30 a 14hs <br /><br />
-
-CÓRDOBA<br />
-"Oktubre Rockería"<br />
-9 de Julio 150 - Local 7<br />
-Lunes a Viernes de 10 a 19hs<br /><br />
-
-SANTA FE<br />
-"Santa Fe Rock"<br />
-San Martín 2347, Galería Florida, Local 39 y 40<br />
-Lunes a Viernes de 9 a 13hs y de 16 a 20hs<br />
-Sábado de de 10 a 13 y de 17 a 20hs<br /><br />
-
- 
-
--Show ATP: Ingreso permitido a partir de los 7 años<br />
-<br />
-
--Habrá un cupo limitado para personas con discapacidad. Deberán mandar un mail a <br />acreditacion@rockyreggae.com.ar<br /><br />
-
-(ingreso por orden de inscripción)<br />
--Los que necesiten entradas al por mayor para micros, escriban a <br />microsfundamentalistas@gmail.com<br /><br />
-
--Acreditaciones de prensa únicamente a <br /><br />
-
-luzespecheagencia@gmail.com cc: luismielniczuk@hotmail.com.ar <br /><br /><br />
-
- 
-
-Gracias por la paciencia, estamos muy felices de volver a encontrarnos...<br /><br />
-
+            Sábado 8 de Junio <br />
+            En el Estadio Único Diego Armando Maradona de La Plata <br />
+            ¡ÚNICO SHOW! <br />
+            <br />
+          
+            
+            ● Cabecera: $22.000 (+ costo de servicio) <br />
+            ● Campo: $26.000 (+ costo de servicio)
+            <br />
+            ● Platea: $31.000 (+ costo de servicio)
+            <br />
+           
+            <br />
+            -Por seguridad, las entradas electrónicas (e-tickets) las vas a poder
+            descargar 48 horas antes del show.
+            <br />
+            <br />
+            -Podes pagar con tarjeta MasterCard, Visa y Visa Débito <br />  4 cuotas sin
+            interés con Banco Provincia
+            <br />
+            <br />
+            Próximamente vas a podes comprar en los siguientes puntos de venta
+            físicos:
+            <br />
+            -TuEntrada.com - de Lunes a Viernes de 9.00 a 15.00 en Viamonte 560
+            local 6, CABA <br />
+            -Groove - CABA
+            <br />
+            -MaxiDiosko - CABA
+            <br />
+            -El Búho - San Justo
+            <br />
+            -La Estaka - Quilmes
+            <br />
+            -El Sabbath - Don Torcuato
+            <br />
+            -Jason Rock - La Plata
+            <br />
+            -La Daga - Rosario
+            <br />
+            -Oktubre - Córdoba <br />
+            -Santa Fe Rock - Santa Fe
+            <br />
+            <br />
+            -El ingreso de menores de 7 años NO está permitido.
+            <br />
+            <br />
+            -Habrá un cupo limitado para personas con discapacidad. Deberán
+            mandar un mail a{" "}
+            <a
+              href="mailto:acreditacion@rockyreggae.com.ar"
+              className="hover:text-blue-200"
+            >
+              acreditacion@rockyreggae.com.ar
+            </a>{" "}
+            (capacidad limitada / ingreso por orden de inscripción)
+            <br />
+            <br />
+            -Quienes deseen contactarse por entradas al por mayor para micros
+            deben hacerlo a{" "}
+            <a
+              href="mailto:microsfundamentalistas@gmail.com"
+              className="hover:text-blue-200"
+            >
+              microsfundamentalistas@gmail.com
+            </a>
+            <br />
+            <br />
+            Gracias por la paciencia, estamos muy felices de volver a
+            encontrarnos...
+            <br />
+            <br />
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 place-items-center">
-          <img style={{textAlign: "center"}}
-            src="https://tuentrada.com/concierto/faa/1.jpg"
-            alt=""
-          />
-          <img
-            src="https://tuentrada.com/concierto/faa/2.jpg"
-            alt=""
-          />
-          <img
-            src="https://tuentrada.com/concierto/faa/3.jpg"
-            alt=""
-          />
-          <img
-            src="https://tuentrada.com/concierto/faa/4.jpg"
-            alt=""
-          />
-        </div> 
-         
-        </div> 
+            <img
+              style={{ textAlign: "center" }}
+              src="https://tuentrada.com/concierto/faa/1.jpg"
+              alt=""
+            />
+            <img src="https://tuentrada.com/concierto/faa/2.jpg" alt="faa" />
+            <img src="https://tuentrada.com/concierto/faa/3.jpg" alt="faa" />
+            <img src="https://tuentrada.com/concierto/faa/4.jpg" alt="" />
+          </div>
+        </div>
       </div>
     </section>
   );
