@@ -169,8 +169,8 @@ export const Preventas = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
           <img
             className="block"
-            src="https://tuentrada.com/concierto/faa/plano.png"
-            alt="plano Arjona"
+            src="https://tuentrada.com/concierto/faa/plano1.jpg "
+            alt="plano FDAA"
           />
        
         </div>
