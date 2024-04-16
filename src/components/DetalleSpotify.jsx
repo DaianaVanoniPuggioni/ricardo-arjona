@@ -99,11 +99,19 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
             <br />
             -Por seguridad, las entradas electrónicas (e-tickets) las vas a poder
             descargar 48 horas antes del show.
+
+<br /><br />Podes pagar con tarjeta MasterCard, Visa y Visa Débito <br />
+Podés pagar en 3 cuotas con tarjeta MasterCard, Visa (12% CFT) <br />
+Hasta 4 cuotas sin interes pagando con MasterCard o Visa del Banco Provincia <br />
+
+  <br />
+            <img style={{width:"230px"}}
+            className="block"
+            src="https://tuentrada.com/concierto/faa/logo.png "
+            alt="plano FDAA"
+          />
             <br />
-            <br />
-            -Podés pagar en 3 cuotas con tarjeta MasterCard, Visa y Visa Débito (12% CFT) <br />
-            
-            <br />
+
             Próximamente vas a podes comprar en los siguientes puntos de venta
             físicos:
             <br />
