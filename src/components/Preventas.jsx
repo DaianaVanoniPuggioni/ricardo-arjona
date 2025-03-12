@@ -61,13 +61,18 @@ export const Preventas = () => {
 
   return (
     <section className="text-white container mx-auto pt-10">
-      <div className="flex flex-col md:flex-row items-center justify-center lg:gap-9 md:border-2 border-white lg:p-10 p-2 ">
-        <h3 className="text-2xl lg:text-4xl lg:mb-0 text-center font-bold">
-          28 MARZO
+      <div className="flex flex-col items-center justify-center lg:gap-9 md:border-2 border-white lg:p-10 p-2 mb-5 md:mb-0">
+        <h3 className=" md:hidden text-2xl lg:text-3xl lg:mb-0 text-center font-bold mb-4">
+        28, 29 y 30 de Marzo - 8:00 hs
         </h3>
-        <span className="hidden md:inline md:text-4xl">|</span>
+
+        <h3 className="hidden md:inline text-base lg:text-3xl lg:mb-0 text-center font-bold mb-4">
+        Viernes 28, Sábado 29 y Domingo 30 de Marzo - 08:00 horas
+        </h3>
+
+        {/* <hr className="border border-white w-1/2" /> */}
         <h3 className="text-2xl lg:text-4xl lg:mb-0 text-center font-bold">
-          Autódromo Municipal Juan Manuel Fangio
+          Autódromo Municipal <br className="md:hidden" /> Juan Manuel Fangio
         </h3>
       </div>
 
@@ -89,7 +94,7 @@ export const Preventas = () => {
           {button && (
             <BotonComprar
               label="Comprar General y Paddock"
-              href="https://eventos.tuentrada.com/secured/selection/event/date?productId=10229117426866"
+              href="https://eventos.tuentrada.com/secured/selection/event/date?productId=10229117426865"
             />
           )}
           {button && (
@@ -116,7 +121,7 @@ export const Preventas = () => {
       <section className="text-white p-5 container mx-auto  ">
         <div className="my-5">
           <div className="space-y-5">
-            <p className="text-base lg:text-lg">
+            {/* <p className="text-base lg:text-lg">
               Recordá que los datos de la cuenta y la tarjeta de crédito/débito
               deben coincidir. <br /> <br />
               No es necesario actualizar la página una vez que finalice el
@@ -163,11 +168,13 @@ export const Preventas = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
+          {/* ACÁ PUEDE IR EL PLANO O MAPA
           <img
             className="block"
             src="https://tuentrada.com/concierto/faa/plano.webp "
             alt="plano FDAA"
           />
+        */}
         </div>
       </section>
     </section>

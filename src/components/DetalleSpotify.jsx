@@ -78,103 +78,89 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
           </div>
         </div> */}
 
-        <div className="text-white ">
-          <h3 className="text-2xl lg:text-4xl pb-10 ">
-            Los Fundamentalistas del Aire Acondicionado{" "}
-          </h3>
-          <p>
-            Sábado 8 de Junio <br />
-            En el Estadio Único Diego Armando Maradona de La Plata <br />
-            
-          
-            <br />
-          
-            
-            ● Cabecera: $22.000 (+ costo de servicio) <br />
-            ● Campo: $26.000 (+ costo de servicio)
-            <br />
-            ● Platea: $31.000 (+ costo de servicio)
-            <br />
-           
-            <br />
-            -Por seguridad, las entradas electrónicas (e-tickets) las vas a poder
-            descargar 48 horas antes del show.
+<div className="text-white">
+  <h3 className="text-2xl lg:text-4xl pb-10">TCR SOUTH AMERICA BANCO BRB 2025</h3>
+  <p>
+    <strong >GRAN PREMIO PALADINI</strong><br />
+    Viernes 28, Sábado 29 y Domingo 30 de Marzo - 8:00 hs
+  </p>
 
-<br /><br />Podes pagar con tarjeta MasterCard, Visa y Visa Débito <br />
-Podés pagar en 3 cuotas con tarjeta MasterCard, Visa (12% CFT) <br />
-Hasta 4 cuotas sin interes pagando con MasterCard o Visa del Banco Provincia <br />
+  <p className="pt-5">
+    Puedes pagar con:
+    <ul>
+      <li>Tarjeta MasterCard, Visa y Visa Débito.</li>
+      <li>En 3 cuotas con tarjeta MasterCard, Visa (12% CFT).</li>
+      <li>Hasta 4 cuotas sin interés con MasterCard o Visa del Banco Provincia.</li>
+    </ul>
+  </p>
 
-  <br />
-            <img style={{width:"230px"}}
-            className="block"
-            src="https://tuentrada.com/concierto/faa/logo.png "
-            alt="plano FDAA"
-          />
-            <br />
+  <h5 className="text-xl lg:text-2xl  pt-5 pb-2">Sector General</h5>
+  <p>
+    Si quieres sentir la vibra de la carrera desde las tribunas y vivir un ambiente festivo, este es tu lugar:
+    <ul>
+      <li>Vista privilegiada a la recta principal y podio.</li>
+      <li>Sector con pantalla gigante y sonido.</li>
+      <li>Food trucks, paseo de compras y entretenimiento.</li>
+    </ul>
+  </p>
 
-            Próximamente vas a podes comprar en los siguientes puntos de venta
-            físicos:
-            <br />
-            -TuEntrada.com - de Lunes a Viernes de 9.00 a 15.00 en Viamonte 560
-            local 6, CABA <br />
-            -Groove - CABA
-            <br />
-            -MaxiDiosko - CABA
-            <br />
-            -El Búho - San Justo
-            <br />
-            -La Estaka - Quilmes
-            <br />
-            -El Sabbath - Don Torcuato
-            <br />
-            -Jason Rock - La Plata
-            <br />
-            -La Daga - Rosario
-            <br />
-            -Oktubre - Córdoba <br />
-            -Santa Fe Rock - Santa Fe
-            <br />
-            <br />
-            -El ingreso de menores de 7 años NO está permitido.
-            <br />
-            <br />
-            -Habrá un cupo limitado para personas con discapacidad. Deberán
-            mandar un mail a{" "}
-            <a
-              href="mailto:acreditacion@rockyreggae.com.ar"
-              className="hover:text-blue-200"
-            >
-              acreditacion@rockyreggae.com.ar
-            </a>{" "}
-            (capacidad limitada / ingreso por orden de inscripción)
-            <br />
-            <br />
-            -Quienes deseen contactarse por entradas al por mayor para micros
-            deben hacerlo a{" "}
-            <a
-              href="mailto:microsfundamentalistas@gmail.com"
-              className="hover:text-blue-200"
-            >
-              microsfundamentalistas@gmail.com
-            </a>
-            <br />
-            <br />
-            Gracias por la paciencia, estamos muy felices de volver a
-            encontrarnos...
-            <br />
-            <br />
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 place-items-center">
-            <img
-              style={{ textAlign: "center" }}
-              src="https://tuentrada.com/concierto/faa/1.jpg"
-              alt=""
-            />
-            <img src="https://tuentrada.com/concierto/faa/2.jpg" alt="faa" />
-            <img src="https://tuentrada.com/concierto/faa/3.jpg" alt="faa" />
-            <img src="https://tuentrada.com/concierto/faa/4.jpg" alt="" />
-          </div>
-        </div>
+  <h5 className="text-xl lg:text-2xl  pt-5 pb-2">Sector Paddock</h5>
+  <p>
+    ¡Acceso exclusivo para estar en el centro de la acción!
+    <ul>
+      <li><strong>Acceso a la zona detrás de boxes:</strong> Observa el trabajo de los equipos.</li>
+      <li><strong>Pit Lane Walk:</strong> Sábado y domingo según programación.</li>
+      <li><strong>Bonus Mini Super Jump:</strong> Actividades para niños.</li>
+      <li><strong>Paddock Bar:</strong> Buena música y comida cerca del podio.</li>
+    </ul>
+  </p>
+
+  <h5 className="text-xl lg:text-2xl  pt-5 pb-2">Área VIP <em>- Cupos Limitados -</em></h5>
+  <p>
+    <strong>¡El nivel más exclusivo del evento!</strong><br />
+    Disfruta de un trato preferencial con todas las comodidades:
+    <ul>
+      <li>PARKING VIP - FULL DAY HOSPITALITY.</li>
+      <li>Cocina gourmet: desayuno continental, buffet, snacks y cerveza.</li>
+      <li>Vista panorámica, boxes y parrilla de salida.</li>
+      <li>Pase para el Paddock (viernes, sábado y domingo).</li>
+      <li>LIVE TV y cronometraje en vivo.</li>
+      <li>Host Lounge: Atención personalizada.</li>
+    </ul>
+  </p>
+
+  <h5 className="text-xl lg:text-2xl  pt-5 pb-2">TCR VIP Lounge + Box Experience</h5>
+  <p>
+    Experimenta el Box Experience y vive una experiencia inmersiva:
+    <ul>
+      <li>Paddock Tour por áreas restringidas.</li>
+      <li>Visita al podio.</li>
+      <li>Fast VIP Pass en el Pit Lane Walk.</li>
+      <li>Acceso a Grid Pass.</li>
+      <li>Meet & Greet con pilotos y visita especial a los equipos.</li>
+      <li>Book Digital de fotos mediante QR exclusivo.</li>
+    </ul>
+  </p>
+
+  <p>
+    <strong>Para "suites privadas" contactarse a: services@southamerica.tcr-series.com</strong>
+  </p>
+
+  <h5 className="text-xl lg:text-2xl  pt-5 pb-2">INFORMACIÓN IMPORTANTE:</h5>
+  <ul>
+    <li>Niños hasta 12 años: acceso gratuito al Paddock.</li>
+    <li>Niños hasta 5 años: acceso gratuito al área VIP (acompañados por un adulto).</li>
+    <li>Personas con movilidad reducida: Entrada gratuita con verificación en el ingreso.</li>
+  </ul>
+
+  {/* <div className=" pt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 place-items-center">
+    <img src="https://tuentrada.com/concierto/faa/1.jpg" alt="Imagen 1" />
+    <img src="https://tuentrada.com/concierto/faa/2.jpg" alt="Imagen 2" />
+    <img src="https://tuentrada.com/concierto/faa/3.jpg" alt="Imagen 3" />
+    <img src="https://tuentrada.com/concierto/faa/4.jpg" alt="Imagen 4" />
+  </div> */}
+</div>
+
       </div>
     </section>
   );
