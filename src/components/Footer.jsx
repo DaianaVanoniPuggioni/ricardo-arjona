@@ -56,19 +56,19 @@ export const Footer = () => {
 
         <a
           className="pt-5"
-          href="https://www.tuentrada.com/terminosycondiciones/"
+          href="https://ayuda.tuentrada.com/general/aviso-legal"
           target="_blank"
           rel="noreferrer"
         >
-          <p className="text-base lg:text-lg">Términos y condiciones</p>
+          <p className="text-base lg:text-lg">Términos y Condiciones</p>
         </a>
         <a
           className="pt-5"
-          href="https://www.tuentrada.com/wallet/"
+          href="https://ayuda.tuentrada.com"
           target="_blank"
           rel="noreferrer"
         >
-          <p className="text-base lg:text-lg">TuEntrada Wallet</p>
+          <p className="text-base lg:text-lg">Centro de Ayuda</p>
         </a>
       </div>
       {/* <span className="text-xs">

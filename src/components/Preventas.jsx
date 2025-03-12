@@ -120,12 +120,12 @@ export const Preventas = () => {
       <section className="text-white p-5 container mx-auto  ">
         <div className="my-5">
           <div className="space-y-5">
-            <p className="text-base lg:text-lg">
+            {/* <p className="text-base lg:text-lg">
               Recordá que los datos de la cuenta y la tarjeta de crédito/débito
               deben coincidir. <br /> <br />
               No es necesario actualizar la página una vez que finalice el
               contador.
-            </p>
+            </p> */}
               <hr className="border border-white" />
             
               <br />
@@ -167,12 +167,13 @@ export const Preventas = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
-          <img
+          {/* ACÁ PUEDE IR EL PLANO O MAPA
+           <img
             className="block"
             src="https://tuentrada.com/concierto/faa/plano.webp "
             alt="plano FDAA"
           />
-       
+        */}
         </div>
       </section>
     </section>

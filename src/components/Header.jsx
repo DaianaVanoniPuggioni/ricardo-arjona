@@ -22,11 +22,11 @@ export const Header = () => {
         //   backgroundImage: `url("https://www.tuentrada.com/concierto/rauw-alejandro/banner.png"})`,
         // }}
       >
-        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/faa/fdaa-celular.webp" alt="ysy a" />
-        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/faa/fdaa-celular.webp" alt="ysy a" />
-        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/concierto/faa/fdaa-escritorio.webp" alt="ysy a" />
-        <h1 className="hidden">FUNDAMENTALISTAS DEL AIRE ACONDICIONADO</h1>
-        <h2 className="hidden">Estadio Único de La Plata</h2>
+        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/tcr/celular.webp" alt="tcr banner" />
+        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/tcr/celular.webp" alt="tcr banner" />
+        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/concierto/tcr/desktop.webp" alt="tcr banner" />
+        <h1 className="hidden">TCR SOUTH AMERICA BANCO BRB 2025</h1>
+        <h2 className="hidden">Autódromo Municipal Juan Manuel Fangio</h2>
           
         {/* <div
           className={`min-h-[50vh] flex justify-center items-start flex-col `}
