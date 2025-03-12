@@ -1,19 +1,23 @@
+import PropTypes from "prop-types";
 
-export const BotonComprar = ({href}) => {
+export const BotonComprar = ({ href, label = "Comprar" }) => {
   return (
-    <>
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className="inline-block pb-10"
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="block w-full"
+    >
+      <button
+        className={`w-full bg-white border-white border hover:bg-transparent hover:text-white text-lg text-black font-bold py-3 px-6 rounded-full transition-all duration-300`}
       >
-        <button
-          className={` bg-white border-white border hover:bg-transparent hover:text-white  text-lg text-black font-bold py-2 px-10  md:px-12 rounded-full`}
-        >
-          Comprar
-        </button>
-      </a>
-    </>
+        {label}
+      </button>
+    </a>
   );
+};
+
+BotonComprar.propTypes = {
+  href: PropTypes.string.isRequired,
+  label: PropTypes.string,
 };
