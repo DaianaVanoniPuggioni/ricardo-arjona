@@ -89,8 +89,6 @@ Los fanáticos ya saben que YSY A trabaja todos los días para seguir sorprendi�
     Puedes pagar con:
     <ul>
       <li>Tarjeta MasterCard, Visa y Visa Débito.</li>
-      <li>En 3 cuotas con tarjeta MasterCard, Visa (12% CFT).</li>
-      <li>Hasta 4 cuotas sin interés con MasterCard o Visa del Banco Provincia.</li>
     </ul>
   </p>
 
