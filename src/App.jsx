@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/tcr">
+    <BrowserRouter basename="/wine-rock">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/*">

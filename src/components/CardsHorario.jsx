@@ -6,13 +6,7 @@ export const CardsHorario = ({ num, texto }) => {
         <p className=" text-xl md:text-4xl lg:text-6xl font-bold text-white dark:text-gray-400  py-2 md:py-3 lg:px-10 lg:py-2 flex justify-center align-middle ">
           {num}
         </p>
-        {/* <a
-          href="#"
-          className="inline-flex items-center px-16 py-4 text-xl font-semibold text-center text-white bg-[#242222] rounded-full hover:bg-[#3b3a3a] focus:ring-4 focus:outline-none"
-        >
-          Comprar 
-
-        </a> */}
+      
 
         <hr className=" border border-white  " />
         <div className="flex justify-center h-10 items-center">

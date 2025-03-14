@@ -17,22 +17,16 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`nav bg-no-repeat bg-cover bg-end z-40`}
-        // style={{
-        //   backgroundImage: `url("https://www.tuentrada.com/concierto/rauw-alejandro/banner.png"})`,
-        // }}
+        className={`nav bg-no-repeat bg-cover bg-end z-40m mt-20`}
+       
       >
-        <img className="sm:block md:hidden" src="https://tuentrada.com/concierto/tcr/celular.webp" alt="tcr banner" />
-        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/concierto/tcr/celular.webp" alt="tcr banner" />
-        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/concierto/tcr/desktop.webp" alt="tcr banner" />
-        <h1 className="hidden">TCR SOUTH AMERICA BANCO BRB 2025</h1>
-        <h2 className="hidden">Autódromo Municipal Juan Manuel Fangio</h2>
+        <img className="sm:block md:hidden" src="https://tuentrada.com/experiencia/wine-rock/celular.jpg" alt="Wine Rock Banner" />
+        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/experiencia/wine-rock/celular.jpg" alt="Wine Rock Banner" />
+        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/experiencia/wine-rock/escritorio.webp" alt="Wine Rock Banner" />
+        <h1 className="hidden">Wine Rock</h1>
+        <h2 className="hidden">Lomas del Malbec, Lujan de Cuyo, Mendoza</h2>
           
-        {/* <div
-          className={`min-h-[50vh] flex justify-center items-start flex-col `}
-          >
-          
-        </div> */}
+     
       </header>
     </>
   );

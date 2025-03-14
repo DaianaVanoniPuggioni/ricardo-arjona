@@ -61,122 +61,64 @@ export const Preventas = () => {
 
   return (
     <section className="text-white container mx-auto pt-10">
-      <div className="flex flex-col items-center justify-center lg:gap-9 md:border-2 border-white lg:p-10 p-2 mb-5 md:mb-0">
-        <h3 className=" md:hidden text-2xl lg:text-3xl lg:mb-0 text-center font-bold mb-4">
-        28, 29 y 30 de Marzo - 8:00 hs
-        </h3>
+  
+  {/* Fecha y Ubicación */}
+  <div id="comprar" className=" flex flex-col items-center justify-center rounded-lg text-center border-2 border-white p-6 lg:p-10 mb-6">
+    <h3 className="text-xl lg:text-3xl font-bold">
+    Sábado 5 de Abril - 16:00 Horas
+    </h3>
+    <h3 className="text-xl lg:text-3xl font-bold mt-2">
+      Lomas del Malbec, Luján de Cuyo, Mendoza
+    </h3>
+  </div>
 
-        <h3 className="hidden md:inline text-base lg:text-3xl lg:mb-0 text-center font-bold mb-4">
-        Viernes 28, Sábado 29 y Domingo 30 de Marzo - 08:00 horas
-        </h3>
+  {/* Botones de Compra */}
+  <div className="flex flex-col items-center justify-center rounded-lg border-2 border-white p-6 lg:p-10">
+    <div className="w-full max-w-md mx-auto space-y-4">
+      {button && (
+        <BotonComprar
+          label="Comprar Entrada"
+          href="https://bbva1.tuentrada.com/selection/event/date?productId=10229100130616&_gl=1*1puns8l*_gcl_au*MTI4MDgwMDUwNS4xNzQxODk5MDAzLjEzMjI0Mjg4NDYuMTc0MTg5OTA5Mi4xNzQxODk5MDky*_ga*MzU0OTQ4MDI1LjE3NDE4OTkwMDM.*_ga_K2KT0GJC8Q*MTc0MTk1OTQ4NS4zLjAuMTc0MTk1OTQ4OC41Ny4wLjEzNjIwODEyODU."
+        />
+      )}
+      {button && (
+        <BotonComprar
+          label="Comprar Estacionamiento"
+          href="https://bbva1.tuentrada.com/selection/event/date?productId=10229105144558&_gl=1*yzbnnh*_gcl_au*MTI4MDgwMDUwNS4xNzQxODk5MDAzLjEzMjI0Mjg4NDYuMTc0MTg5OTA5Mi4xNzQxODk5MDky*_ga*MzU0OTQ4MDI1LjE3NDE4OTkwMDM.*_ga_K2KT0GJC8Q*MTc0MTk1OTQ4NS4zLjEuMTc0MTk1OTU3NS40Ny4wLjEzNjIwODEyODU."
+        />
+      )}
+    </div>
+  </div>
 
-        {/* <hr className="border border-white w-1/2" /> */}
-        <h3 className="text-2xl lg:text-4xl lg:mb-0 text-center font-bold">
-          Autódromo Municipal <br className="md:hidden" /> Juan Manuel Fangio
-        </h3>
-      </div>
+  {/* Line Up del Festival */}
+  <section id="lineup" className="text-white py-20 container mx-auto flex flex-col md:flex-row justify-between items-center">
+    
+    {/* Imagen del Line-Up (40%) */}
+    <div className="w-full md:w-[35%]">
+      <img
+        src="https://tuentrada.com/experiencia/wine-rock/line-up-image.png"
+        alt="Wine Rock Line Up"
+        className="w-full h-auto rounded-lg shadow-md"
+      />
+    </div>
 
-      <div className="flex flex-col  items-center justify-center lg:gap-9 md:border-2 border-white lg:p-10 p-2">
-        {/* {!button && (
-          <>
-            <div>
-              <div className="flex pt-5 justify-center px-2 gap-1 ">
-                <CardsHorario texto={"Día"} num={days} />
-                <CardsHorario texto={"Hs"} num={hours} />
-                <CardsHorario texto={"Min"} num={minutes} />
-                <CardsHorario texto={"Seg"} num={seconds} />
-              </div>
-            </div>
-          </>
-        )} */}
+    {/* Texto del Line-Up (60%) */}
+    <div className="w-full md:w-[65%] my-5 lg:my-8 md:pl-8 text-center md:text-left">
+  <h2 className="text-2xl lg:text-3xl font-bold py-3">
+  ¡Conocé el Line Up de Wine Rock!
+  </h2>
+  <p className="text-base leading-relaxed ">
+    El Festival Wine Rock 2025 contará con la actuación de artistas nacionales e internacionales. Destacan la mexicana <strong>Julieta Venegas</strong>, <strong>El Kuelgue</strong>, <strong>Conociendo Rusia</strong>, <strong>Javier Malosetti</strong>, <strong>Chechi De Marcos</strong>, <strong>Feli Ruiz</strong>, además del <strong>Jazz and Blues Club</strong> con el estadounidense <strong>Lorenzo Thompson</strong>, el brasilero <strong>Bruno Marques</strong>, <strong>Denise Izaguirre</strong> y la <strong>Willy Blues Band</strong>. También habrá una participación especial del DJ francés <strong>Sébastien Léger</strong>.
+  </p>
+  <p className="py-4 text-base leading-relaxed">
+  La edición 2025 promete ser una celebración de música en todas sus formas al pie de la Cordillera de Los Andes. Tendrá dos escenarios y distintas actividades que completan la experiencia. Habrá un sector gastronómico exclusico, cata de vinos, maridaje con platos diseñados para la ocasión, experiencias inmersivas en el mundo del vino y la música, entre otras propuestas adicionales. 
+  </p>
+</div>
 
-        <div className="w-full max-w-md mx-auto space-y-4 px-4">
-          {button && (
-            <BotonComprar
-              label="Comprar General y Paddock"
-              href="https://eventos.tuentrada.com/secured/selection/event/date?productId=10229117426865"
-            />
-          )}
-          {button && (
-            <BotonComprar
-              label="Comprar VIP 1 Día"
-              href="https://eventos.tuentrada.com/secured/selection/event/date?productId=10229117686233"
-            />
-          )}
-          {button && (
-            <BotonComprar
-              label="Comprar VIP 2 Días"
-              href="https://eventos.tuentrada.com/selection/subscription?productId=10229117426869"
-            />
-          )}
-          {button && (
-            <BotonComprar
-              label="Comprar Estacionamiento"
-              href="https://eventos.tuentrada.com/secured/selection/event/date?productId=10229117426866"
-            />
-          )}
-        </div>
-      </div>
 
-      <section className="text-white p-5 container mx-auto  ">
-        <div className="my-5">
-          <div className="space-y-5">
-            {/* <p className="text-base lg:text-lg">
-              Recordá que los datos de la cuenta y la tarjeta de crédito/débito
-              deben coincidir. <br /> <br />
-              No es necesario actualizar la página una vez que finalice el
-              contador.
-            </p>
-            <hr className="border border-white" />
+  </section>
 
-            <br />
+</section>
 
-            {/* <a
-              target="_new"
-              className={` bg-transparent border-white border hover:bg-white hover:text-black  text-base text-white py-2 px-5  md:px-10 rounded-full`}
-              href="https://tuentrada.com/concierto/faa/plano.png"
-              rel="noreferrer"
-            >
-              Ver Ubicaciones
-            </a> */}
-
-            {/* <p className="text-base lg:text-lg">
-              Preventa exclusiva tarjeta Santander American Express: Miércoles
-              5/7 - 10:00 hs – durante 48 hs o hasta agotar stock.
-              <br />
-              <br />
-              Hasta 6 cuotas sin interés.
-              <br />
-              <br />
-              Finalizada la preventa comenzará la venta general.
-            </p> */}
-            {/* <a
-              target="_new"
-              href="https://www.instagram.com/stories/highlights/18392541697005748/"
-              rel="noreferrer"
-            >
-              {" "}
-              <img
-                className="w-[200] md:sm:w-[200px] lg:w-[40%] xl:w-[35%]"
-                src="https://tuentrada.com/concierto/ysy-a/preventa.webp"
-                alt="preventa ysy a"
-              />
-            </a> */}
-            {/* <h3 className="text-2xl lg:text-4xl py-10">
-              Ubicaciones y precios
-            </h3> */}
-          </div>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-center items-center text-center my-10">
-          {/* ACÁ PUEDE IR EL PLANO O MAPA
-          <img
-            className="block"
-            src="https://tuentrada.com/concierto/faa/plano.webp "
-            alt="plano FDAA"
-          />
-        */}
-        </div>
-      </section>
-    </section>
   );
 };
