@@ -5,7 +5,7 @@ export const DetalleSpotify = () => {
     <section  id="tickets" className="text-white py-5 container mx-auto ">
       <div className="text-white">
       
-      <div className="text-white text-center pb-10 bg-[#0A0F1D] w-full">
+      <div className="text-white text-center pb-10  w-full">
   
   {/* Título Principal */}
   <h2 className="text-3xl font-bold pb-3 text-whiteinline-block">
