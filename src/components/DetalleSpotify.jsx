@@ -1,73 +1,68 @@
-// import { SpotifyCard } from "./SpotifyCard";
-
 export const DetalleSpotify = () => {
   return (
-    <section  id="tickets" className="text-white py-5 container mx-auto ">
-      <div className="text-white">
-      
-      <div className="text-white text-center pb-10  w-full">
-  
-  {/* Título Principal */}
-  <h2 className="text-3xl font-bold pb-3 text-whiteinline-block">
-    Opciones de Ticket para el Festival 🎟
-  </h2>
+    <section id="tickets" className="text-white py-5 container mx-auto">
+      <div className="text-white text-center w-full">
 
-  {/* Contenedor de Entradas */}
-  <div className="w-full flex flex-col md:flex-row justify-center gap-8 mt-6">
-    
-    {/* Entrada General */}
-    <div className=" p-6 rounded-lg shadow-md w-full md:w-1/2 border-2 border-white">
-      <h3 className="text-2xl font-semibold text-white py-2">
-        Entrada General
-      </h3>
-      <ul className="text-base leading-relaxed">
-        <li>✔ Acceso a <strong>todos los shows</strong></li>
-        <li>✔ Acceso a <strong>propuestas gastronómicas</strong></li>
-        <li>✔ Acceso a <strong>experiencias artísticas</strong></li>
-      </ul>
-    </div>
+        {/* Sección de Experiencias */}
+        <div className="text-white text-center pb-10 w-full flex flex-col justify-center items-center">
 
-    {/* Entrada VIP */}
-    <div className=" p-6 rounded-lg shadow-md w-full md:w-1/2 border-2 border-white">
-      <h3 className="text-2xl font-semibold text-white py-2">
-        Entrada VIP
-      </h3>
-      <p className="text-base leading-relaxed">Sector exclusivo con beneficios:</p>
-      <ul className="text-base leading-relaxed mt-2">
-        <li>✔ <strong>Gastronomía y bebida de cortesía</strong></li>
-        <li>✔ <strong>Baños exclusivos</strong></li>
-        <li>✔ <strong>Vista privilegiada</strong></li>
-        <li id="info">✔ <strong>Estacionamiento propio</strong></li>
-      </ul>
-    </div>
-  
-  </div>
+          {/* Banner de Experiencias */}
+          <img 
+            className="1-full mb-6 mx-auto rounded-lg" 
+            src="https://tuentrada.com/experiencia/wine-rock/banner-experiencia-1.png" 
+            alt="banner experiencias" 
+          />
+         
 
-</div>
+          {/* Mensaje Importante */}
+          <div id="experiencia" className="bg-red-600 text-white text-sm p-3 rounded-md mx-auto">
+            <strong>IMPORTANTE:</strong> El ticket de la experiencia sólo es válido si también contás con tu ticket para el festival. La compra de una experiencia no incluye el acceso al evento.
+          </div>
 
- {/* Nueva Sección para Próximamente */}
- <div  className="text-white text-center py-10  w-full">
-          <h2 className="text-3xl font-bold pb-3">
-            Próximamente Más Información
-          </h2>
-          <p className="text-base max-w-2xl mx-auto">
-            Estamos preparando una experiencia increíble para vos. Próximamente podrás acceder a:
-          </p>
-          <ul className="text-base leading-relaxed mt-4 ">
-            <li>✔ Inscripción a experiencias gratuitas</li>
-            <li>✔ Playlist exclusiva de Wine Rock</li>
-            <li>✔ Sección de prensa con materiales descargables</li>
-          </ul>
-          <p className="mt-6 text-gray-300">
-            ¡Mantente atento a nuestras actualizaciones!
-          </p>
+          {/* Contenedor de Experiencias */}
+          <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-16 mt-10 text-left w-full">
+
+            {/* Experiencia 1 */}
+            <div className="w-full">
+              <img className="w-full h-auto rounded-lg mb-6" src="https://tuentrada.com/experiencia/wine-rock/experiencia-1.jpg" alt="Experiencia Agustina de Alba" />
+              <h3 className="text-3xl font-semibold py-2 ">Hola Vino por Agus de Alba</h3>
+              <p className="text-base leading-relaxed ">Agustina de Alba te invita a vivir una experiencia única en el mundo del vino, donde cada copa revela una nueva historia. A través de sus proyectos educativos, te llevará a explorar los secretos del vino de una forma inmersiva y accesible. Bajo el cielo de Mendoza, descubrirás el origen, la evolución y los matices de cada vino, aprendiendo a disfrutarlo y entenderlo como un verdadero experto. Con la belleza de los viñedos como escenario, te adentrarás en un recorrido sensorial lleno de sabor y conocimiento.</p>
+              <p><strong>Fecha:</strong> Sábado 05 de abril</p>
+              <p><strong>Horarios:</strong> 16h, 17h y 18h - las actividades comienzan puntual</p>
+              <p><strong>Espacio:</strong> Viñedos</p>
+              <p><strong>Cupo:</strong> 30 personas por horario</p>
+              <p><strong>Valor:</strong> $15.000</p>
+            </div>
+
+            {/* Experiencia 2 */}
+            <div className="w-full">
+              <img className="w-full h-auto rounded-lg mb-6" src="https://tuentrada.com/experiencia/wine-rock/experiencia-2.jpg" alt="Experiencia Pablo Ponce" />
+              <h3 className="text-3xl font-semibold py-2">De Cabeza al Vino con Pablo Ponce</h3>
+              <p className="text-base leading-relaxed">Una degustación única entre viñedos, donde cada copa cuenta una historia. Bajo el sol mendocino, Pablo Ponce – enólogo y comunicador del vino – te guía en una experiencia inmersiva, divertida y llena de sabor. Descubrí los secretos del vino desde su origen, sentí su evolución en la copa y aprendé a interpretarlo como un experto, con el paisaje de Mendoza como el mejor maridaje.</p>
+              <p><strong>Fecha:</strong> Sábado 05 de abril</p>
+              <p><strong>Horarios:</strong> 17.30h y 18.30h - las actividades comienzan puntual</p>
+              <p><strong>Espacio:</strong> Viñedos</p>
+              <p><strong>Cupo:</strong> 30 personas por horario</p>
+              <p><strong>Valor:</strong> $15.000</p>
+            </div>
+
+            {/* Experiencia 3 */}
+            <div className="w-full">
+              <img className="w-full h-auto rounded-lg mb-6" src="https://tuentrada.com/experiencia/wine-rock/experiencia-3.jpg" alt="Experiencia Gabriel Dvoskin" />
+              <h3 className="text-3xl font-semibold py-2 ">Vinos y Naturaleza por Gabriel Dvoskin</h3>
+              <p className="text-base leading-relaxed">Sumergite en un viaje sensorial a través de los vinos de Canopus, un pequeño viñedo orgánico y biodinámico en El Cepillo, Valle de Uco. Guiados por su creador, Gabriel Dvoskin, degustaremos espumantes, blancos y tintos que reflejan la pureza y potencia de la naturaleza. Una cata íntima donde el vino, la sensibilidad y el entorno se encuentran. Si fueran música, estos vinos estarían entre Miles y Bowie.</p>
+              <p><strong>Fecha:</strong> Sábado 05 de abril</p>
+              <p><strong>Horarios:</strong> 19h y 20.15h - las actividades comienzan puntual</p>
+              <p><strong>Espacio:</strong> Experience LAB</p>
+              <p><strong>Cupo:</strong> 40 personas por horario</p>
+              <p><strong>Valor:</strong> $15.000</p>
+            </div>
+
+          </div>
+
         </div>
 
-    
-
       </div>
-
-      
     </section>
   );
 };

@@ -1,9 +1,8 @@
 export const DetalleConcierto = () => {
   return (
-    <section className="text-white py-5 container mx- border-t-2 border-white">
+    <section id="info" className="text-white py-5 container mx-auto border-t-2 border-white">
     {/* Información Importante */}
-    
-    
+
     <div >
     <h2 className="text-3xl font-bold py-3 text-whiteinline-block  text-center">
       ⚠ Importante

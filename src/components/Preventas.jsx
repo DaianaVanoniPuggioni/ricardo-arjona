@@ -89,9 +89,40 @@ export const Preventas = () => {
       )}
     </div>
   </div>
+<div className=" py-5 container mx-auto">
 
+
+<div className="text-white text-center pt-10 w-full">
+
+ {/* Título Principal */}
+ <h2 className="text-3xl font-bold pb-3">Opciones de Ticket para el Festival 🎟</h2>
+
+{/* Contenedor de Entradas */}
+<div className="w-full flex flex-col md:flex-row justify-center gap-8 mt-6">
+
+  {/* Entrada General */}
+  <div className="p-6 rounded-lg shadow-md w-full md:w-1/2 border-2 border-white">
+    <h3 className="text-2xl font-semibold text-white py-2">Entrada General</h3>
+    <ul className="text-base leading-relaxed">
+      <li>✔ Acceso a <strong>todos los shows</strong></li>
+      <li>✔ Acceso a <strong>propuestas gastronómicas</strong></li>
+      <li>✔ Acceso a <strong>experiencias artísticas</strong></li>
+    </ul>
+  </div>
+
+  {/* Entrada VIP */}
+  <div className="p-6 rounded-lg shadow-md w-full md:w-1/2 border-2 border-white">
+    <h3 className="text-2xl font-semibold text-white py-2">Entrada VIP</h3>
+    <p className="text-base leading-relaxed">Sector exclusivo con beneficios:</p>
+    <ul className="text-base leading-relaxed mt-2">
+      <li>✔ <strong>Gastronomía y bebida de cortesía</strong></li>
+      <li>✔ <strong>Baños exclusivos</strong></li>
+      <li>✔ <strong>Vista privilegiada</strong></li>
+      <li>✔ <strong>Estacionamiento propio</strong></li>
+    </ul>
+  </div>  </div></div></div>
   {/* Line Up del Festival */}
-  <section id="lineup" className="text-white py-20 container mx-auto flex flex-col md:flex-row justify-between items-center">
+  <section id="lineup" className="text-white py-5  md:py-20 container mx-auto flex flex-col md:flex-row justify-between items-center">
     
     {/* Imagen del Line-Up (40%) */}
     <div className="w-full md:w-[35%]">
@@ -103,14 +134,14 @@ export const Preventas = () => {
     </div>
 
     {/* Texto del Line-Up (60%) */}
-    <div className="w-full md:w-[65%] my-5 lg:my-8 md:pl-8 text-center md:text-left">
+    <div className="w-full md:w-[65%] mt-5 mb-2 md:my-4 lg:my-8 md:pl-8 text-center md:text-left">
   <h2 className="text-2xl lg:text-3xl font-bold py-3">
   ¡Conocé el Line Up de Wine Rock!
   </h2>
   <p className="text-base leading-relaxed ">
     El Festival Wine Rock 2025 contará con la actuación de artistas nacionales e internacionales. Destacan la mexicana <strong>Julieta Venegas</strong>, <strong>El Kuelgue</strong>, <strong>Conociendo Rusia</strong>, <strong>Javier Malosetti</strong>, <strong>Chechi De Marcos</strong>, <strong>Feli Ruiz</strong>, además del <strong>Jazz and Blues Club</strong> con el estadounidense <strong>Lorenzo Thompson</strong>, el brasilero <strong>Bruno Marques</strong>, <strong>Denise Izaguirre</strong> y la <strong>Willy Blues Band</strong>. También habrá una participación especial del DJ francés <strong>Sébastien Léger</strong>.
   </p>
-  <p className="py-4 text-base leading-relaxed">
+  <p className="pt-4 text-base leading-relaxed">
   La edición 2025 promete ser una celebración de música en todas sus formas al pie de la Cordillera de Los Andes. Tendrá dos escenarios y distintas actividades que completan la experiencia. Habrá un sector gastronómico exclusico, cata de vinos, maridaje con platos diseñados para la ocasión, experiencias inmersivas en el mundo del vino y la música, entre otras propuestas adicionales. 
   </p>
 </div>
