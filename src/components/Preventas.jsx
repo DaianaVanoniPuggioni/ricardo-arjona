@@ -65,7 +65,7 @@ export const Preventas = () => {
   {/* Fecha y Ubicación */}
   <div id="comprar" className=" flex flex-col items-center justify-center rounded-lg text-center border-2 border-white p-6 lg:p-10 mb-6">
     <h3 className="text-xl lg:text-3xl font-bold">
-    Sábado 5 de Abril - 16:00 Horas
+    Sábado 5 de Abril - 15:30 Horas
     </h3>
     <h3 className="text-xl lg:text-3xl font-bold mt-2">
       Lomas del Malbec, Luján de Cuyo, Mendoza
@@ -81,15 +81,27 @@ export const Preventas = () => {
           href="https://bbva1.tuentrada.com/selection/event/date?productId=10229100130616&_gl=1*1puns8l*_gcl_au*MTI4MDgwMDUwNS4xNzQxODk5MDAzLjEzMjI0Mjg4NDYuMTc0MTg5OTA5Mi4xNzQxODk5MDky*_ga*MzU0OTQ4MDI1LjE3NDE4OTkwMDM.*_ga_K2KT0GJC8Q*MTc0MTk1OTQ4NS4zLjAuMTc0MTk1OTQ4OC41Ny4wLjEzNjIwODEyODU."
         />
       )}
+       {button && (
+        <BotonComprar
+          label="Comprar Transporte Oficial"
+          href="https://landing.andesmar.tuscombis.com/"
+        />
+      )}
       {button && (
         <BotonComprar
           label="Comprar Estacionamiento"
           href="https://bbva1.tuentrada.com/selection/event/date?productId=10229105144558&_gl=1*yzbnnh*_gcl_au*MTI4MDgwMDUwNS4xNzQxODk5MDAzLjEzMjI0Mjg4NDYuMTc0MTg5OTA5Mi4xNzQxODk5MDky*_ga*MzU0OTQ4MDI1LjE3NDE4OTkwMDM.*_ga_K2KT0GJC8Q*MTc0MTk1OTQ4NS4zLjEuMTc0MTk1OTU3NS40Ny4wLjEzNjIwODEyODU."
         />
       )}
+       {button && (
+        <BotonComprar
+          label="Comprar Experiencias"
+          href="#experiencia"
+        />
+      )}
     </div>
   </div>
-<div className=" py-5 container mx-auto">
+<div id="tickets"  className=" py-5 container mx-auto ">
 
 
 <div className="text-white text-center pt-10 w-full">
