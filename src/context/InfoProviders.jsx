@@ -1,5 +1,7 @@
-import { createContext, useEffect, useState } from "react";
-import { getEnvVariables } from "../helpers/getEnvVariables";
+import { createContext } from "react";
+import PropTypes from 'prop-types';
+// import { useEffect, useState } from "react";
+// import { getEnvVariables } from "../helpers/getEnvVariables";
 
 // const { VITE_API_GEO } = getEnvVariables();
 
@@ -41,6 +43,10 @@ const InfoProvider = (props) => {
       {props.children}
     </InfoContext.Provider>
   );
+};
+
+InfoProvider.propTypes = {
+  children: PropTypes.node.isRequired
 };
 
 export default InfoProvider;

@@ -16,17 +16,24 @@ export const Header = () => {
 
   return (
     <>
-      <header
-        className={`nav bg-no-repeat bg-cover bg-end z-40m mt-20`}
-       
-      >
-        <img className="sm:block md:hidden" src="https://tuentrada.com/experiencia/wine-rock/banner-celular-1.png" alt="Wine Rock Banner" />
-        <img className="hidden md:block w-screen lg:hidden"  src="https://tuentrada.com/experiencia/wine-rock/banner-celular-1.png" alt="Wine Rock Banner" />
-        <img className="hidden  lg:block w-full"  src="https://tuentrada.com/experiencia/wine-rock/banner-escritorio.png" alt="Wine Rock Banner" />
+      <header className={`nav bg-no-repeat bg-cover bg-end z-40m mt-20`}>
+        <img
+          className="sm:block md:hidden"
+          src="https://tuentrada.com/experiencia/wine-rock/banner-celular-1.png"
+          alt="Wine Rock Banner"
+        />
+        <img
+          className="hidden md:block w-screen lg:hidden"
+          src="https://tuentrada.com/experiencia/wine-rock/banner-celular-1.png"
+          alt="Wine Rock Banner"
+        />
+        <img
+          className="hidden  lg:block w-full"
+          src="https://tuentrada.com/experiencia/wine-rock/banner-escritorio.png"
+          alt="Wine Rock Banner"
+        />
         <h1 className="hidden">Wine Rock</h1>
         <h2 className="hidden">Lomas del Malbec, Lujan de Cuyo, Mendoza</h2>
-          
-     
       </header>
     </>
   );

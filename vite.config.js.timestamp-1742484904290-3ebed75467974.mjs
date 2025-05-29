@@ -2,7 +2,7 @@
 import { defineConfig } from "file:///C:/Users/TUE/Desktop/proyectos/grandes-eventos/ricardo-arjona/node_modules/vite/dist/node/index.js";
 import react from "file:///C:/Users/TUE/Desktop/proyectos/grandes-eventos/ricardo-arjona/node_modules/@vitejs/plugin-react/dist/index.mjs";
 var vite_config_default = defineConfig({
-  base: "/wine-rock",
+  base: "/festival-bandera",
   plugins: [react()]
 });
 export {

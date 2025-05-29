@@ -1,9 +1,10 @@
-import ReactGA from "react-ga4";
-import { getEnvVariables } from "./helpers/getEnvVariables";
 import { useEffect } from "react";
-import { Home } from "./components/Home";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import ReactGA from "react-ga4";
 import TagManager from "react-gtm-module";
+
+import { getEnvVariables } from "./helpers/getEnvVariables";
+import { Home } from "./components/Home";
 
 const { VITE_GA } = getEnvVariables();
 const TagManagerArgs = {
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/wine-rock">
+    <BrowserRouter basename="/festival-bandera">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/*">
