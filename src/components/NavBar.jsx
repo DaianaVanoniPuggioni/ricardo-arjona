@@ -26,10 +26,10 @@ export const NavBar = () => {
         {/* Menú en Pantallas Grandes */}
         <ul className="hidden lg:flex space-x-6 text-white text-base leading-relaxed">
           <li><a href="#comprar" className="hover:text-gray-300">Comprar Entradas</a></li>
-          <li><a href="#lineup" className="hover:text-gray-300">Line Up</a></li>
-          <li><a href="#tickets" className="hover:text-gray-300">Opciones de Ticket</a></li>
-          <li><a href="#experiencia" className="hover:text-gray-300">Experiencias</a></li>
-          <li><a href="#info" className="hover:text-gray-300">Más Información</a></li>
+          <li><a href="#lineup" className="hover:text-gray-300">Gacetilla</a></li>
+          {/* <li><a href="#tickets" className="hover:text-gray-300">Opciones de Ticket</a></li> */}
+          {/* <li><a href="#experiencia" className="hover:text-gray-300">Experiencias</a></li> */}
+          {/* <li><a href="#info" className="hover:text-gray-300">Más Información</a></li> */}
         </ul>
       </div>
 
@@ -38,10 +38,10 @@ export const NavBar = () => {
         <div className="lg:hidden bg-black w-full absolute top-full left-0 shadow-md">
           <ul className="flex flex-col text-white text-center py-4">
             <li className="py-2"><a href="#comprar" onClick={() => setMenuOpen(false)}>Comprar</a></li>
-            <li className="py-2"><a href="#lineup" onClick={() => setMenuOpen(false)}>Line Up</a></li>
-            <li className="py-2"><a href="#tickets" onClick={() => setMenuOpen(false)}>Opciones de Ticket</a></li>
-            <li className="py-2"><a href="#experiencia" onClick={() => setMenuOpen(false)}>Experiencias</a></li>
-            <li className="py-2"><a href="#info" onClick={() => setMenuOpen(false)}>Más Información</a></li>
+            <li className="py-2"><a href="#lineup" onClick={() => setMenuOpen(false)}>Gacetilla</a></li>
+            {/* <li className="py-2"><a href="#tickets" onClick={() => setMenuOpen(false)}>Opciones de Ticket</a></li> */}
+            {/* <li className="py-2"><a href="#experiencia" onClick={() => setMenuOpen(false)}>Experiencias</a></li> */}
+            {/* <li className="py-2"><a href="#info" onClick={() => setMenuOpen(false)}>Más Información</a></li> */}
           </ul>
         </div>
       )}

@@ -116,9 +116,9 @@ export const Preventas = () => {
         {/* Texto del Line-Up (60%) */}
         <div className="w-full md:w-[65%] mt-5 mb-2 md:my-4 lg:my-8 md:pl-8 text-center md:text-left">
           <h2 className="text-2xl lg:text-3xl font-bold py-3">
-            ¡Conocé el Line Up del Festival Bandera!
+          Llega la sexta edición del Festival Bandera a Rosario
           </h2>
-          <p className="text-base leading-relaxed ">
+          {/* <p className="text-base leading-relaxed ">
             El Festival Bandera 2025 contará con la actuación de artistas
             nacionales e internacionales. Destacan la mexicana{" "}
             <strong>Julieta Venegas</strong>, <strong>El Kuelgue</strong>,{" "}
@@ -138,7 +138,7 @@ export const Preventas = () => {
             gastronómico exclusico, cata de vinos, maridaje con platos diseñados
             para la ocasión, experiencias inmersivas en el mundo del vino y la
             música, entre otras propuestas adicionales.
-          </p>
+          </p> */}
         </div>
       </section>
     </section>

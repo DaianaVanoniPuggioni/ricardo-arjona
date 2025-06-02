@@ -10,7 +10,7 @@ export const MainEvent = () => {
       </div>
       <div className="bg-1 px-5 md:px-20  lg:px-32 ">
         <DetalleSpotify />
-        <DetalleConcierto />
+        {/* <DetalleConcierto /> */}
         <Footer />
       </div>
     </main>
