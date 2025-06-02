@@ -72,33 +72,14 @@ export const Preventas = () => {
         <h3 className="text-xl lg:text-3xl font-bold mt-2">
           Hipódromo de Rosario
         </h3>
+
+        <div className="w-full max-w-sm mx-auto space-y-4 mt-10">
+          {button && <BotonComprar label="Comprar Entradas" href="" />}
+        </div>
       </div>
 
       {/* Botones de Compra */}
-      <div className="flex flex-col items-center justify-center rounded-lg border-2 border-white p-6 lg:p-10">
-        <div className="w-full max-w-md mx-auto space-y-4">
-          {button && <BotonComprar label="Comprar Entrada" href="" />}
-          {/* {button && (
-        <BotonComprar
-          label="Comprar Transporte Oficial"
-          href="https://landing.andesmar.tuscombis.com/"
-        />
-      )}
-      {button && (
-        <BotonComprar
-          label="Comprar Estacionamiento"
-          href="https://bbva1.tuentrada.com/selection/event/date?productId=10229105144558&_gl=1*yzbnnh*_gcl_au*MTI4MDgwMDUwNS4xNzQxODk5MDAzLjEzMjI0Mjg4NDYuMTc0MTg5OTA5Mi4xNzQxODk5MDky*_ga*MzU0OTQ4MDI1LjE3NDE4OTkwMDM.*_ga_K2KT0GJC8Q*MTc0MTk1OTQ4NS4zLjEuMTc0MTk1OTU3NS40Ny4wLjEzNjIwODEyODU."
-        />
-      )}
-       {button && (
-        <BotonComprar
-          label="Comprar Experiencias"
-          href="#experiencia"
-        />
-      )} */}
-        </div>
-      </div>
-      
+
       {/* Line Up del Festival */}
       <section
         id="lineup"
@@ -116,29 +97,12 @@ export const Preventas = () => {
         {/* Texto del Line-Up (60%) */}
         <div className="w-full md:w-[65%] mt-5 mb-2 md:my-4 lg:my-8 md:pl-8 text-center md:text-left">
           <h2 className="text-2xl lg:text-3xl font-bold py-3">
-          Llega la sexta edición del Festival Bandera a Rosario
+            Llega la sexta edición del Festival Bandera a Rosario
           </h2>
-          {/* <p className="text-base leading-relaxed ">
-            El Festival Bandera 2025 contará con la actuación de artistas
-            nacionales e internacionales. Destacan la mexicana{" "}
-            <strong>Julieta Venegas</strong>, <strong>El Kuelgue</strong>,{" "}
-            <strong>Conociendo Rusia</strong>, <strong>Javier Malosetti</strong>
-            , <strong>Chechi De Marcos</strong>, <strong>Feli Ruiz</strong>,
-            además del <strong>Jazz and Blues Club</strong> con el
-            estadounidense <strong>Lorenzo Thompson</strong>, el brasilero{" "}
-            <strong>Bruno Marques</strong>, <strong>Denise Izaguirre</strong> y
-            la <strong>Willy Blues Band</strong>. También habrá una
-            participación especial del DJ francés{" "}
-            <strong>Sébastien Léger</strong>.
+          <p className="text-base leading-relaxed ">
+            Preventa Banco Santa Fe desde el Miercoles 4/06 a las 12:00hs Venta
+            General desde el Viernes 6/06 a las 12:00hs
           </p>
-          <p className="pt-4 text-base leading-relaxed">
-            La edición 2025 promete ser una celebración de música en todas sus
-            formas al pie de la Cordillera de Los Andes. Tendrá dos escenarios y
-            distintas actividades que completan la experiencia. Habrá un sector
-            gastronómico exclusico, cata de vinos, maridaje con platos diseñados
-            para la ocasión, experiencias inmersivas en el mundo del vino y la
-            música, entre otras propuestas adicionales.
-          </p> */}
         </div>
       </section>
     </section>
