@@ -150,7 +150,7 @@ export const Preventas = () => {
               <li className="flex items-center">
                 <MdWarningAmber className="mr-2 text-[#FA69D3]" size={22} />
                 <span>
-                  <strong>Edad mínima de ingreso:</strong> Desde los 5 Años
+                  <strong>Edad mínima de ingreso:</strong> Desde los 5 años
                 </span>
               </li>
               <li className="flex items-center">
