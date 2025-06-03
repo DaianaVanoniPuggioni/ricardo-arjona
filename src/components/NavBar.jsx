@@ -26,7 +26,8 @@ export const NavBar = () => {
         {/* Menú en Pantallas Grandes */}
         <ul className="hidden lg:flex space-x-6 text-white text-base leading-relaxed">
           <li><a href="#comprar" className="hover:text-gray-300">Comprar Entradas</a></li>
-          <li><a href="#lineup" className="hover:text-gray-300">Gacetilla</a></li>
+          <li><a href="#lineup" className="hover:text-gray-300">Información</a></li>
+          <li><a href="#legales" className="hover:text-gray-300">Promociones Bancarias</a></li>
           {/* <li><a href="#tickets" className="hover:text-gray-300">Opciones de Ticket</a></li> */}
           {/* <li><a href="#experiencia" className="hover:text-gray-300">Experiencias</a></li> */}
           {/* <li><a href="#info" className="hover:text-gray-300">Más Información</a></li> */}

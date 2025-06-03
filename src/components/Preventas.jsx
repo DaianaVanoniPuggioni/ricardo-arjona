@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { GrInstagram } from "react-icons/gr";
+import { FaFacebook } from "react-icons/fa";
 // import { useContext, useEffect, useState } from "react";
 // import { CardsHorario } from "./CardsHorario";
 import { BotonComprar } from "./";
@@ -74,7 +76,7 @@ export const Preventas = () => {
         </h3>
 
         <div className="w-full max-w-sm mx-auto space-y-4 mt-10">
-          {button && <BotonComprar label="Comprar Entradas" href="" />}
+          {button && <BotonComprar label="Comprar Entradas" href="https://bandera.tuentrada.com/secured/selection/event/date?productId=10229134082473" />}
         </div>
       </div>
 
@@ -86,25 +88,46 @@ export const Preventas = () => {
         className="text-white py-5  md:py-20 container mx-auto flex flex-col md:flex-row justify-between items-center"
       >
         {/* Imagen del Line-Up (40%) */}
-        <div className="w-full md:w-[35%]">
+        <div className="w-full md:w-[35%]  hidden lg:block">
           <img
             src="https://tuentrada.com/experiencia/festival-bandera/line-up-image1.jpg"
             alt="Festival Bandera Line Up"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-full h-auto rounded-lg shadow-md "
           />
         </div>
 
         {/* Texto del Line-Up (60%) */}
         <div className="w-full md:w-[65%] mt-5 mb-2 md:my-4 lg:my-8 md:pl-8 text-center md:text-left">
-          <h2 className="text-2xl lg:text-3xl font-bold py-3">
-            Llega la sexta edición del Festival Bandera a Rosario
-          </h2>
-          <p className="text-base leading-relaxed ">
-            Preventa Banco Santa Fe desde el Miercoles 4/06 a las 12:00hs Venta
-            General desde el Viernes 6/06 a las 12:00hs
-          </p>
-        </div>
+  <h2 className="text-2xl lg:text-3xl font-bold py-3">
+    Llega la sexta edición del Festival Bandera a Rosario
+  </h2>
+  <p className="text-base leading-relaxed mb-4">
+    <strong>Preventa Banco Santa Fe:</strong> desde el <span className="font-medium">miércoles 4/06 a las 12:00hs</span><br />
+    <strong>Venta General:</strong> desde el <span className="font-medium">viernes 6/06 a las 12:00hs</span>
+  </p>
+  <ul className="text-base leading-relaxed space-y-1">
+    <li><strong>Lugar:</strong> Hipódromo de Rosario</li>
+    <li><strong>Ciudad:</strong> Rosario</li>
+    <li><strong>Fecha:</strong> 1 de noviembre de 2025</li>
+    <li><strong>Hora:</strong> 14:30 hs</li>
+  
+    <li><strong>Edad mínima de ingreso:</strong> Desde los 5 años</li>
+    <li><strong>Dirección:</strong> Parque Independencia</li>
+ 
+  </ul>
+  <div className="flex items-center  mt-2">
+      <GrInstagram />
+<h3 className="font-semibold underline ml-1"><a href="https://www.instagram.com/festivalbanderaok/?hl=es">Instagram</a> </h3>
+      </div>
+      <div className="flex items-center">
+      <FaFacebook />
+<h3 className="font-semibold underline ml-1"><a href="https://www.instagram.com/festivalbanderaok/?hl=es">Facebook</a> </h3>
+      </div>
+</div>
+
+        
       </section>
+    
     </section>
   );
 };
