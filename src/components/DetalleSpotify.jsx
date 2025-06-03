@@ -2,78 +2,26 @@ export const DetalleSpotify = () => {
   return (
     <section className="text-white py-5 container mx-auto">
       <div className="text-white text-center w-full">
-        {/* Sección de Experiencias */}
         <div className="text-white text-center pb-10 w-full flex flex-col justify-center items-center">
-          {/* Banner de Experiencias */}
-          {/* <img
-            className="1-full mb-6 mx-auto rounded-lg"
-            src="https://tuentrada.com/experiencia/wine-rock/banner-experiencia-1.png"
-            alt="banner experiencias"
-          /> */}
-
-          {/* Mensaje Importante */}
-          {/* <div
-            id="experiencia"
-            className="bg-red-600 text-white text-sm p-3 rounded-md mx-auto"
-          >
-            <strong>IMPORTANTE:</strong> El ticket de la experiencia sólo es
-            válido si también contás con tu ticket para el festival. La compra
-            de una experiencia no incluye el acceso al evento.
-          </div> */}
-
-          {/* Contenedor de Experiencias */}
-          {/* <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-16 mt-10 text-left w-full">
-            
-            <div className="w-full">
-              <img
-                className="w-full h-auto rounded-lg mb-6"
-                src="https://tuentrada.com/experiencia/wine-rock/experiencia-1.jpg"
-                alt="Experiencia Agustina de Alba"
-              />
-              <h3 className="text-3xl font-semibold py-2 ">
-                Hola Vino por Agus de Alba
-              </h3>
-              <p className="text-base leading-relaxed ">
-                Agustina de Alba te invita a vivir una experiencia única en el
-                mundo del vino, donde cada copa revela una nueva historia. A
-                través de sus proyectos educativos, te llevará a explorar los
-                secretos del vino de una forma inmersiva y accesible. Bajo el
-                cielo de Mendoza, descubrirás el origen, la evolución y los
-                matices de cada vino, aprendiendo a disfrutarlo y entenderlo
-                como un verdadero experto. Con la belleza de los viñedos como
-                escenario, te adentrarás en un recorrido sensorial lleno de
-                sabor y conocimiento.
-              </p>
-              <p>
-                <strong>Fecha:</strong> Sábado 05 de abril
-              </p>
-              <p>
-                <strong>Horarios:</strong> 16h, 17h y 18h - las actividades
-                comienzan puntual
-              </p>
-              <p>
-                <strong>Espacio:</strong> Viñedos
-              </p>
-              <p>
-                <strong>Cupo:</strong> Limitado
-              </p>
-              <p>
-                <strong>Valor:</strong> $15.000
-              </p>
-
-              <button
-                className={`w-auto text-white border-white border hover:bg-transparent hover:text-white text-base font-bold py-2 px-6 rounded-lg transition-all duration-300 mt-3`}
-              >
-                <a href="https://bbva1.tuentrada.com/secured/selection/event/date?productId=10229118993384">
-                  Comprar
-                </a>
-              </button>
-            </div>
-
-         
-
-           
-          </div> */}
+          <p className="text-sm leading-relaxed max-w-4xl text-left">
+            <strong>Legales Banco Santa Fe FESTIVAL BANDERA Preventa</strong><br />
+            C.F.T.: 0,00% Preventa Exclusiva Banco Santa Fe: Vigencia desde el 04/06/2025 a las 12 pm hasta el 06/06/2025 a las 12 pm inclusive. Beneficio 12 cuotas sin interés sobre precio de contado. Promoción válida para la compra de entradas para el Festival Bandera. Exclusivo abonando con tarjeta de crédito Visa emitidas por el Nuevo Banco Santa Fe S.A. Costo financiero total (C.F.T.): 0,00%, tasa efectiva anual (T.E.A.): 0,00%, tasa nominal anual (T.N.A.): 0,00%. Ejemplo: Podrá financiar una compra precio de contado de $180.000 en 12 cuotas fijas de $15.000 c/u. Recibirá en la primera liquidación de su tarjeta un consumo de $15.000. En la segunda y hasta la décima segunda liquidación posterior a la compra, recibirá un consumo de $15.000 en cada uno de ellos. Válido para cartera de consumo. Nuevo Banco Santa Fe S.A. solo informa el medio y las condiciones para el pago de los productos/servicios ofrecidos por el proveedor. Previo a la contratación del producto o servicio, verifique con el proveedor sus condiciones y alcance de la garantía. Nuevo Banco Santa Fe S.A. – CUIT 30-69243266-1 - San Martin N°715, Provincia de Santa Fe.
+          </p>
+          <br />
+          <p className="text-sm leading-relaxed max-w-4xl text-left">
+            <strong>Legales Banco Santa Fe FESTIVAL BANDERA Venta General</strong><br />
+            C.F.T.: 0,00% Vigencia desde el 06/06/2025 a las 12:01 pm hasta agotar stock. Beneficio 9 cuotas sin interés sobre precio de contado. Promoción válida para la compra de entradas para el Festival Bandera. Exclusivo abonando con tarjeta de crédito Visa emitidas por el Nuevo Banco Santa Fe S.A. costo financiero total (C.F.T.): 0,00%, tasa efectiva anual (T.E.A.): 0,00%, tasa nominal anual (T.N.A.): 0,00%. Ejemplo: Podrá financiar una compra precio de contado de $180.000 en 9 cuotas fijas de $20.000 c/u. Recibirá en la primera liquidación de su tarjeta un consumo de $20.000. En la segunda y hasta la novena liquidación posterior a la compra, recibirá un consumo de $20.000 en cada uno de ellos. Válido para cartera de consumo. Nuevo Banco Santa Fe S.A. solo informa el medio y las condiciones para el pago de los productos/servicios ofrecidos por el proveedor. Previo a la contratación del producto o servicio, verifique con el proveedor sus condiciones y alcance de la garantía. Nuevo Banco Santa Fe S.A. – CUIT 30-69243266-1 - San Martin N°715, Provincia de Santa Fe.
+          </p>
+          <br />
+          <p className="text-sm leading-relaxed max-w-4xl text-left">
+            <strong>Legales Banco de Entre Rios FESTIVAL BANDERA Preventa</strong><br />
+            C.F.T.: 0,00% Preventa Exclusiva Banco Entre Ríos: Vigencia desde el 04/06/2025 a las 12 pm hasta el 06/06/2025 a las 12 pm inclusive. Beneficio 12 cuotas sin interés sobre precio de contado. Promoción válida para la compra de entradas para el Festival Bandera. Exclusivo abonando con tarjeta de crédito Visa emitidas por el Nuevo Banco de Entre Ríos S.A. costo financiero total (C.F.T.): 0,00%, tasa efectiva anual (T.E.A.): 0,00%, tasa nominal anual (T.N.A.): 0,00%. Ejemplo: Podrá financiar una compra precio de contado de $180.000 en 12 cuotas fijas de $15.000 c/u. Recibirá en la primera liquidación de su tarjeta un consumo de $15.000. En la segunda y hasta la décima segunda liquidación posterior a la compra, recibirá un consumo de $15.000 en cada uno de ellos. Válido para cartera de consumo. Nuevo Banco de Entre Ríos S.A. solo informa el medio y las condiciones para el pago de los productos/servicios ofrecidos por el proveedor. Previo a la contratación del producto o servicio, verifique con el proveedor sus condiciones y alcance de la garantía. Nuevo Banco de Entre Ríos S.A. - Cuit 33-70799551-9 - Monte Caseros 128, Paraná, Entre Ríos.
+          </p>
+          <br />
+          <p className="text-sm leading-relaxed max-w-4xl text-left">
+            <strong>Legales Banco de Entre Rios FESTIVAL BANDERA Venta General</strong><br />
+            C.F.T.: 0,00% Vigencia desde el 06/06/2025 a las 12:01 pm hasta agotar stock. Beneficio 9 cuotas sin interés sobre precio de contado. Promoción válida para la compra de entradas para el Festival Bandera. Exclusivo abonando con tarjeta de crédito Visa emitidas por el Nuevo Banco de Entre Rios S.A. costo financiero total (C.F.T.): 0,00%, tasa efectiva anual (T.E.A.): 0,00%, tasa nominal anual (T.N.A.): 0,00%. Ejemplo: Podrá financiar una compra precio de contado de $180.000 en 9 cuotas fijas de $20.000 c/u. Recibirá en la primera liquidación de su tarjeta un consumo de $20.000. En la segunda y hasta la novena liquidación posterior a la compra, recibirá un consumo de $20.000 en cada uno de ellos. Válido para cartera de consumo. Nuevo Banco de Entre Ríos S.A. solo informa el medio y las condiciones para el pago de los productos/servicios ofrecidos por el proveedor. Previo a la contratación del producto o servicio, verifique con el proveedor sus condiciones y alcance de la garantía. Nuevo Banco de Entre Ríos S.A. - Cuit 33-70799551-9 - Monte Caseros 128, Paraná, Entre Ríos.
+          </p>
         </div>
       </div>
     </section>
