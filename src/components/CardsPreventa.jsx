@@ -14,8 +14,12 @@ export const CardsPreventa = ({ title, price, fee }) => {
           ${price.toLocaleString()} + ${fee.toLocaleString()}
         </p>
         <p className="text-sm text-gray-300 mb-4">
-  Precio total sin impuestos nacionales: ${sinImpuestos.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-</p>
+          Precio total sin impuestos nacionales: $
+          {sinImpuestos.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}
+        </p>
         <p className="font-medium text-white">Valor entrada</p>
         <hr className="my-2 border-gray-400" />
         <p className="text-3xl font-bold text-white">
@@ -68,8 +72,12 @@ export const CardsPreventa2 = () => {
         {sectores.map((s, i) => (
           <tr key={i} className="border-b border-white">
             <td className="border-r border-white px-4 py-2">{s.nombre}</td>
-            <td className="border-r border-white px-4 py-2">${s[tipo].precio.toLocaleString()}</td>
-            <td className="border-r border-white px-4 py-2">${s[tipo].fee.toLocaleString()}</td>
+            <td className="border-r border-white px-4 py-2">
+              ${s[tipo].precio.toLocaleString()}
+            </td>
+            <td className="border-r border-white px-4 py-2">
+              ${s[tipo].fee.toLocaleString()}
+            </td>
             <td className="px-4 py-2">
               ${(s[tipo].precio + s[tipo].fee).toLocaleString()}
             </td>
@@ -81,10 +89,10 @@ export const CardsPreventa2 = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-start gap-10 text-white my-10 px-2">
       <div className="flex-1">
-        <h3 className="text-lg font-bold mb-2">Preventa Banco Santa Fe - Banco Entre Ríos</h3>
-        <p className="text-sm mb-4">
-          Desde el miércoles 4/06 a las 12:00hs
-        </p>
+        <h3 className="text-lg font-bold mb-2">
+          Preventa Banco Santa Fe - Banco Entre Ríos
+        </h3>
+        <p className="text-sm mb-4">Desde el miércoles 4/06 a las 12:00hs</p>
         {renderTabla("preventa")}
       </div>
       <div className="flex-1">
