@@ -7,15 +7,13 @@ import { Video } from "./Video";
 export const MainEvent = () => {
   return (
     <main className="text-white container mx-auto px-6">
-
       {/* Preventas y RestInformation */}
       <div>
         <Preventas />
+        {/* CardsContainer */}
+        <CardsContainer />
         <RestInformation />
       </div>
-
-      {/* CardsContainer */}
-      <CardsContainer />
 
       {/* Iframe de video */}
       <Video />
@@ -25,7 +23,6 @@ export const MainEvent = () => {
 
       {/* Footer */}
       <Footer />
-
     </main>
   );
 };

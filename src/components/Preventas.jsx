@@ -1,6 +1,12 @@
 import { useState } from "react";
-import { GrInstagram } from "react-icons/gr";
-import { FaFacebook } from "react-icons/fa";
+import {
+  MdLocationOn,
+  MdPersonPinCircle,
+  MdEvent,
+  MdAccessTime,
+  MdWarningAmber,
+  MdMap,
+} from "react-icons/md";
 // import { useContext, useEffect, useState } from "react";
 // import { CardsHorario } from "./CardsHorario";
 import { BotonComprar } from "./";
@@ -107,49 +113,51 @@ export const Preventas = () => {
             Llega la sexta edición del Festival Bandera a Rosario
           </h2>
           <p className="text-base leading-relaxed mb-4">
-            <strong>Preventa Banco Santa Fe:</strong> desde el{" "}
+            <strong>Preventa General:</strong> desde el{" "}
             <span className="font-medium">miércoles 4/06 a las 12:00hs</span>
             <br />
             <strong>Venta General:</strong> desde el{" "}
             <span className="font-medium">viernes 6/06 a las 12:00hs</span>
           </p>
           <div className="text-base leading-relaxed space-y-1">
-            <h3 className="font-bold text-lg mb-3">SECTORES DISPONIBLES:</h3>
-            <ul className="list-none space-y-4">
-              <li className="flex">
-                <span className="mr-2">-</span>
-                <div>
-                  <span className="font-semibold">CAMPO</span>
-                  <p className="mt-1">
-                    Incluye acceso a todos los escenarios, shows, servicios,
-                    activaciones y espacios gastronómicos.
-                  </p>
-                  <p>No incluye acceso a sector Experiencia Bandera.</p>
-                </div>
+            <h3 className="font-bold text-lg mb-3">INFORMACIÓN DEL EVENTO</h3>
+            <ul className="space-y-3">
+              <li className="flex items-center">
+                <MdLocationOn className="mr-2 text-[#FA69D3]" size={22} />
+                <span>
+                  <strong>Lugar:</strong> Hipódromo de Rosario
+                </span>
               </li>
-              <li className="flex">
-                <span className="mr-2">-</span>
-                <div>
-                  <span className="font-semibold">EXPERIENCIA BANDERA:</span>
-                  <p className="mt-1">
-                    Una manera diferente de vivir el Festival Bandera.
-                  </p>
-                  <ul className="list-disc pl-5 mt-1 space-y-1">
-                    <li>Ingreso exclusivo al predio</li>
-                    <li>
-                      Gastronomía, servicios, zona de relax y sanitarios propios
-                    </li>
-                    <li>
-                      Espacio diferencial al costado de los escenarios
-                      principales (no es campo delantero)
-                    </li>
-                    <li>
-                      Acreditación para circular libremente por las diferentes
-                      áreas habilitadas
-                    </li>
-                    <li>Capacidad limitada</li>
-                  </ul>
-                </div>
+              <li className="flex items-center">
+                <MdPersonPinCircle className="mr-2 text-[#FA69D3]" size={22} />
+                <span>
+                  <strong>Ciudad:</strong> Rosario
+                </span>
+              </li>
+              <li className="flex items-center">
+                <MdEvent className="mr-2 text-[#FA69D3]" size={22} />
+                <span>
+                  <strong>Fecha:</strong> 01-11-2025
+                </span>
+              </li>
+              <li className="flex items-center">
+                <MdAccessTime className="mr-2 text-[#FA69D3]" size={22} />
+                <span>
+                  <strong>Hora:</strong> 14:30hs
+                </span>
+              </li>
+
+              <li className="flex items-center">
+                <MdWarningAmber className="mr-2 text-[#FA69D3]" size={22} />
+                <span>
+                  <strong>Edad mínima de ingreso:</strong> Desde los 5 Años
+                </span>
+              </li>
+              <li className="flex items-center">
+                <MdMap className="mr-2 text-[#FA69D3]" size={22} />
+                <span>
+                  <strong>Dirección:</strong> Parque Independencia
+                </span>
               </li>
             </ul>
           </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Iconos para el menú
-import { GrInstagram } from "react-icons/gr";
-import { FaFacebook } from "react-icons/fa";
+// import { GrInstagram } from "react-icons/gr";
+// import { FaFacebook } from "react-icons/fa";
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,14 +30,6 @@ export const NavBar = () => {
           <li><a href="#comprar" className="hover:text-gray-300">Comprar Entradas</a></li>
           <li><a href="#lineup" className="hover:text-gray-300">Información</a></li>
           <li><a href="#legales" className="hover:text-gray-300">Promociones Bancarias</a></li>
-          <li className="flex items-center gap-4">
-            <a href="https://www.instagram.com/festivalbanderaok/?hl=es" target="_blank" rel="noreferrer" className="hover:text-gray-300 flex items-center">
-              <GrInstagram className="mr-1" /> Instagram
-            </a>
-            <a href="https://www.facebook.com/festivalbanderaok" target="_blank" rel="noreferrer" className="hover:text-gray-300 flex items-center">
-              <FaFacebook className="mr-1" /> Facebook
-            </a>
-          </li>
         </ul>
       </div>
 
@@ -48,14 +40,6 @@ export const NavBar = () => {
             <li className="py-2"><a href="#comprar" onClick={() => setMenuOpen(false)}>Comprar</a></li>
             <li className="py-2"><a href="#lineup" onClick={() => setMenuOpen(false)}>Información</a></li>
             <li className="py-2"><a href="#legales" onClick={() => setMenuOpen(false)}>Promociones Bancarias</a></li>
-            <li className="py-2 flex flex-col items-center justify-center gap-4">
-              <a href="https://www.instagram.com/festivalbanderaok/?hl=es" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="flex items-center">
-                <GrInstagram className="mr-1" /> Instagram
-              </a>
-              <a href="https://www.facebook.com/festivalbanderaok" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="flex items-center">
-                <FaFacebook className="mr-1" /> Facebook
-              </a>
-            </li>
           </ul>
         </div>
       )}
