@@ -28,41 +28,44 @@ export const CardsPreventa3 = ({ title, price, fee }) => {
   const sinImpuestos = price + feeSinIVA;
 
   return (
-    <div className="flex-1 border-2 border-white rounded-lg p-8 bg-black/60 flex flex-col items-center min-w-[280px] max-w-md mx-auto h-full">
-      <h3 className="text-xl font-bold mb-2 uppercase">{title}</h3>
-      
-      <ul className="text-left space-y-2 mb-10 w-full">
-        {beneficios.map((b, i) => (
-          <li className="flex items-start" key={i}>
-            {b.include === false ? (
-              <ImCross className="text-red-500 mr-2 w-5 h-5 flex-shrink-0" size={20} />
-            ) : (
-              <FaCheck className="text-green-400 mr-2 w-5 h-5 flex-shrink-0" size={20} />
-            )}
-            {b.bold ? (
-              <span className="font-bold">{b.texto}</span>
-            ) : (
-              <span>{b.texto}</span>
-            )}
-          </li>
-        ))}
-      </ul>
-      <div className="w-full text-center mt-auto">
-        <p className="text-white font-bold text-md mb-1">
-          ${price.toLocaleString()} + ${fee.toLocaleString()}
-        </p>
-        <p className="text-sm text-gray-300 mb-2">
-          Precio total sin impuestos nacionales: $
-          {sinImpuestos.toLocaleString(undefined, {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2,
-          })}
-        </p>
-        <p className="font-medium text-white mb-1">Valor entrada</p>
-        <hr className="my-2 border-gray-400" />
-        <p className="text-3xl font-bold text-white">
-          ${total.toLocaleString()}
-        </p>
+    <div className="flex-1 border-2 border-white rounded-lg bg-[#FA69D3] flex flex-col items-center min-w-[280px] max-w-md mx-auto h-full">
+      <div className="w-full bg-[#FA69D3] py-3 flex justify-center items-center rounded-tr-lg rounded-tl-lg">
+        <h3 className="text-xl font-bold uppercase text-white m-0">{title}</h3>
+      </div>
+      <div className="p-8 flex flex-col flex-1 w-full bg-black">
+        <ul className="text-left space-y-2 mb-10 w-full">
+          {beneficios.map((b, i) => (
+            <li className="flex items-start" key={i}>
+              {b.include === false ? (
+                <ImCross className="text-red-500 mr-2 w-5 h-5 flex-shrink-0" size={20} />
+              ) : (
+                <FaCheck className="text-green-400 mr-2 w-5 h-5 flex-shrink-0" size={20} />
+              )}
+              {b.bold ? (
+                <span className="font-bold">{b.texto}</span>
+              ) : (
+                <span>{b.texto}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+        <div className="w-full text-center mt-auto">
+          <p className="text-white font-bold text-md mb-1">
+            ${price.toLocaleString()} + ${fee.toLocaleString()}
+          </p>
+          <p className="text-sm text-gray-300 mb-2">
+            Precio total sin impuestos nacionales: $
+            {sinImpuestos.toLocaleString(undefined, {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })}
+          </p>
+          <p className="font-medium text-white mb-1">Valor entrada</p>
+          <hr className="my-2 border-gray-400" />
+          <p className="text-3xl font-bold text-white">
+            ${total.toLocaleString()}
+          </p>
+        </div>
       </div>
     </div>
   );
