@@ -88,7 +88,7 @@ export const Preventas = () => {
         {/* Imagen del Line-Up (40%) */}
         <div className="w-full md:w-[35%]">
           <img
-            src="https://tuentrada.com/experiencia/festival-bandera/line-up-image.jpg"
+            src="https://tuentrada.com/experiencia/festival-bandera/line-up-image1.jpg"
             alt="Festival Bandera Line Up"
             className="w-full h-auto rounded-lg shadow-md"
           />

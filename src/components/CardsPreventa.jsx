@@ -1,7 +1,8 @@
 // eslint-disable-next-line react/prop-types
 export const CardsPreventa = ({ title, price, fee }) => {
   const total = price + fee;
-  const sinImpuestos = (total / 1.21).toFixed(2); // Suponiendo 21% de IVA
+  const feeSinIVA = fee / 1.21;
+  const sinImpuestos = price + feeSinIVA;
 
   return (
     <div className="w-full rounded-lg shadow-lg overflow-hidden bg-transparent text-center border-2 border-white">
@@ -13,8 +14,8 @@ export const CardsPreventa = ({ title, price, fee }) => {
           ${price.toLocaleString()} + ${fee.toLocaleString()}
         </p>
         <p className="text-sm text-gray-300 mb-4">
-          Precio total sin impuestos nacionales: ${Number(sinImpuestos).toLocaleString()}
-        </p>
+  Precio total sin impuestos nacionales: ${sinImpuestos.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+</p>
         <p className="font-medium text-white">Valor entrada</p>
         <hr className="my-2 border-gray-400" />
         <p className="text-3xl font-bold text-white">

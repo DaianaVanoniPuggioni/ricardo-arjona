@@ -19,17 +19,17 @@ export const Header = () => {
       <header className={`nav bg-no-repeat bg-cover bg-end z-40m mt-20`}>
         <img
           className="sm:block md:hidden"
-          src="https://tuentrada.com/experiencia/festival-bandera/banner-celular.jpg"
+          src="https://tuentrada.com/experiencia/festival-bandera/banner-celular1.jpg"
           alt="Festival Bandera Banner"
         />
         <img
           className="hidden md:block w-screen lg:hidden"
-          src="https://tuentrada.com/experiencia/festival-bandera/banner-celular.jpg"
+          src="https://tuentrada.com/experiencia/festival-bandera/banner-celular1.jpg"
           alt="Festival Bandera Banner"
         />
         <img
           className="hidden  lg:block w-full"
-          src="https://tuentrada.com/experiencia/festival-bandera/banner-escritorio.jpg"
+          src="https://tuentrada.com/experiencia/festival-bandera/banner-escritorio1.jpg"
           alt="Festival Bandera Banner"
         />
         <h1 className="hidden">Festival Bandera</h1>

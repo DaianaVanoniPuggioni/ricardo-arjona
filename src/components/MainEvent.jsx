@@ -11,21 +11,19 @@ export const MainEvent = () => {
         {/* <DetalleSpotify /> */}
         <div className="w-full md:w-1/3">
           <CardsPreventa
-            title="Preventa Banco Santa Fe"
-            price={1000}
-            fee={100}
+            title="Campo"
+            price={70000}
+            fee={7000}
           />
         </div>
         <div className="w-full md:w-1/3">
           <CardsPreventa
-            title="Preventa Banco Entre Ríos"
-            price={1000}
-            fee={100}
+            title="Experiencia Bandera"
+            price={190000}
+            fee={19000}
           />
         </div>
-        <div className="w-full md:w-1/3">
-          <CardsPreventa title="General" price={1000} fee={100} />
-        </div>
+        
         {/* <CardsPreventa titulo="Preventa Banco Entre Rios" precio={1000} fee={100} /> */}
         {/* <DetalleConcierto /> */}
       </div>
