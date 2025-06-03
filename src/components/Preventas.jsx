@@ -114,10 +114,10 @@ export const Preventas = () => {
           </h2>
           <p className="text-base leading-relaxed mb-4">
             <strong>Preventa General:</strong> desde el{" "}
-            <span className="font-medium">miércoles 4/06 a las 12:00hs</span>
+            <span className="font-medium">miércoles 04/06 a las 12:00hs</span>
             <br />
             <strong>Venta General:</strong> desde el{" "}
-            <span className="font-medium">viernes 6/06 a las 12:00hs</span>
+            <span className="font-medium">viernes 06/06 a las 12:00hs</span>
           </p>
           <div className="text-base leading-relaxed space-y-1">
             <h3 className="font-bold text-lg mb-3">INFORMACIÓN DEL EVENTO</h3>

@@ -6,15 +6,15 @@ import { ImCross } from "react-icons/im";
 export const CardsPreventa3 = ({ title, price, fee }) => {
   // Beneficios según el tipo de entrada
   let beneficios = [];
-  let subtitulo = null;
+ 
   if (title.toLowerCase().includes("campo")) {
-    subtitulo = <span></span>;
+    
     beneficios = [
       { texto: "Incluye acceso a todos los escenarios, shows, servicios, activaciones y espacios gastronómicos.", bold: false, include: true },
       { texto: "No incluye acceso a sector Experiencia Bandera.", bold: false, include: false },
     ];
   } else {
-    subtitulo = <span></span>;
+    
     beneficios = [
       { texto: "Ingreso exclusivo al predio", bold: false, include: true },
       { texto: "Gastronomía, servicios, zona de relax y sanitarios propios", bold: false, include: true },
@@ -30,8 +30,8 @@ export const CardsPreventa3 = ({ title, price, fee }) => {
   return (
     <div className="flex-1 border-2 border-white rounded-lg p-8 bg-black/60 flex flex-col items-center min-w-[280px] max-w-md mx-auto h-full">
       <h3 className="text-xl font-bold mb-2 uppercase">{title}</h3>
-      <div className="mb-2 text-center text-sm text-gray-200">{subtitulo}</div>
-      <ul className="text-left space-y-2 mb-6 w-full">
+      
+      <ul className="text-left space-y-2 mb-10 w-full">
         {beneficios.map((b, i) => (
           <li className="flex items-start" key={i}>
             {b.include === false ? (
