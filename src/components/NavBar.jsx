@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Iconos para el menú
+import { GrInstagram } from "react-icons/gr";
+import { FaFacebook } from "react-icons/fa";
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,9 +30,14 @@ export const NavBar = () => {
           <li><a href="#comprar" className="hover:text-gray-300">Comprar Entradas</a></li>
           <li><a href="#lineup" className="hover:text-gray-300">Información</a></li>
           <li><a href="#legales" className="hover:text-gray-300">Promociones Bancarias</a></li>
-          {/* <li><a href="#tickets" className="hover:text-gray-300">Opciones de Ticket</a></li> */}
-          {/* <li><a href="#experiencia" className="hover:text-gray-300">Experiencias</a></li> */}
-          {/* <li><a href="#info" className="hover:text-gray-300">Más Información</a></li> */}
+          <li className="flex items-center gap-4">
+            <a href="https://www.instagram.com/festivalbanderaok/?hl=es" target="_blank" rel="noreferrer" className="hover:text-gray-300 flex items-center">
+              <GrInstagram className="mr-1" /> Instagram
+            </a>
+            <a href="https://www.facebook.com/festivalbanderaok" target="_blank" rel="noreferrer" className="hover:text-gray-300 flex items-center">
+              <FaFacebook className="mr-1" /> Facebook
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -39,10 +46,16 @@ export const NavBar = () => {
         <div className="lg:hidden bg-black w-full absolute top-full left-0 shadow-md">
           <ul className="flex flex-col text-white text-center py-4">
             <li className="py-2"><a href="#comprar" onClick={() => setMenuOpen(false)}>Comprar</a></li>
-            <li className="py-2"><a href="#lineup" onClick={() => setMenuOpen(false)}>Gacetilla</a></li>
-            {/* <li className="py-2"><a href="#tickets" onClick={() => setMenuOpen(false)}>Opciones de Ticket</a></li> */}
-            {/* <li className="py-2"><a href="#experiencia" onClick={() => setMenuOpen(false)}>Experiencias</a></li> */}
-            {/* <li className="py-2"><a href="#info" onClick={() => setMenuOpen(false)}>Más Información</a></li> */}
+            <li className="py-2"><a href="#lineup" onClick={() => setMenuOpen(false)}>Información</a></li>
+            <li className="py-2"><a href="#legales" onClick={() => setMenuOpen(false)}>Promociones Bancarias</a></li>
+            <li className="py-2 flex flex-col items-center justify-center gap-4">
+              <a href="https://www.instagram.com/festivalbanderaok/?hl=es" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="flex items-center">
+                <GrInstagram className="mr-1" /> Instagram
+              </a>
+              <a href="https://www.facebook.com/festivalbanderaok" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="flex items-center">
+                <FaFacebook className="mr-1" /> Facebook
+              </a>
+            </li>
           </ul>
         </div>
       )}

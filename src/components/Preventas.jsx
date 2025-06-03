@@ -90,7 +90,7 @@ export const Preventas = () => {
       {/* Line Up del Festival */}
       <section
         id="lineup"
-        className="text-white py-5  md:py-20 container mx-auto flex flex-col md:flex-row justify-between items-center"
+        className="text-white py-5 container mx-auto flex flex-col md:flex-row justify-between items-center"
       >
         {/* Imagen del Line-Up (40%) */}
         <div className="w-full md:w-[35%]  hidden lg:block">
@@ -113,52 +113,72 @@ export const Preventas = () => {
             <strong>Venta General:</strong> desde el{" "}
             <span className="font-medium">viernes 6/06 a las 12:00hs</span>
           </p>
-          <ul className="text-base leading-relaxed space-y-1">
-            <li>
-              <strong className="underline">Lugar:</strong> Hipódromo de Rosario
-            </li>
-            <li>
-              <strong className="underline">Ciudad:</strong> Rosario
-            </li>
-            <li>
-              <strong className="underline">Fecha:</strong> 1 de noviembre de 2025
-            </li>
-            <li>
-              <strong className="underline">Hora:</strong> 14:30 hs
-            </li>
-
-            <li>
-              <strong className="underline">Edad mínima de ingreso:</strong> Desde los 5 años
-            </li>
-            <li>
-              <strong className="underline">Dirección:</strong> Parque
-              Independencia
-            </li>
-          </ul>
-          <div className="flex items-center mt-1">
-            <GrInstagram />
-            <h3 className="font-semibold underline ml-1">
-              <a
-                href="https://www.instagram.com/festivalbanderaok/?hl=es"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram
-              </a>{" "}
-            </h3>
+          <div className="text-base leading-relaxed space-y-1">
+            <h3 className="font-bold text-lg mb-3">SECTORES DISPONIBLES:</h3>
+            <ul className="list-none space-y-4">
+              <li className="flex">
+                <span className="mr-2">-</span>
+                <div>
+                  <span className="font-semibold">CAMPO</span>
+                  <p className="mt-1">
+                    Incluye acceso a todos los escenarios, shows, servicios,
+                    activaciones y espacios gastronómicos.
+                  </p>
+                  <p>No incluye acceso a sector Experiencia Bandera.</p>
+                </div>
+              </li>
+              <li className="flex">
+                <span className="mr-2">-</span>
+                <div>
+                  <span className="font-semibold">EXPERIENCIA BANDERA:</span>
+                  <p className="mt-1">
+                    Una manera diferente de vivir el Festival Bandera.
+                  </p>
+                  <ul className="list-disc pl-5 mt-1 space-y-1">
+                    <li>Ingreso exclusivo al predio</li>
+                    <li>
+                      Gastronomía, servicios, zona de relax y sanitarios propios
+                    </li>
+                    <li>
+                      Espacio diferencial al costado de los escenarios
+                      principales (no es campo delantero)
+                    </li>
+                    <li>
+                      Acreditación para circular libremente por las diferentes
+                      áreas habilitadas
+                    </li>
+                    <li>Capacidad limitada</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div className="flex items-center mt-1">
-            <FaFacebook />
-            <h3 className="font-semibold underline ml-1">
-              <a
-                href="https://www.instagram.com/festivalbanderaok/?hl=es"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Facebook
-              </a>{" "}
-            </h3>
-          </div>
+          {/* <div className="flex gap-2">
+            <div className="flex items-center mt-1">
+              <GrInstagram />
+              <h3 className="font-semibold underline ml-1">
+                <a
+                  href="https://www.instagram.com/festivalbanderaok/?hl=es"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  
+                </a>{" "}
+              </h3>
+            </div>
+            <div className="flex items-center mt-1">
+              <FaFacebook />
+              <h3 className="font-semibold underline ml-1">
+                <a
+                  href="https://www.facebook.com/festivalbanderaok"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  
+                </a>{" "}
+              </h3>
+            </div>
+          </div> */}
         </div>
       </section>
     </section>
