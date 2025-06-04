@@ -32,7 +32,7 @@ export const CardsPreventa3 = ({ title, price, fee }) => {
       <div className="w-full bg-[#FA69D3] py-3 flex justify-center items-center rounded-tr-lg rounded-tl-lg">
         <h3 className="text-xl font-bold uppercase text-white m-0">{title}</h3>
       </div>
-      <div className="p-8 flex flex-col flex-1 w-full bg-black">
+      <div className="p-8 flex flex-col flex-1 w-full bg-black rounded-b-lg">
         <ul className="text-left space-y-2 mb-10 w-full">
           {beneficios.map((b, i) => (
             <li className="flex items-start" key={i}>

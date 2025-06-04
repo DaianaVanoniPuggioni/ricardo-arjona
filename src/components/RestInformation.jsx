@@ -3,7 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 
 export const RestInformation = () => {
   return (
-    <div className="text-white mt-11">
+    <div className="text-white mt-16">
       <div className=" rounded-lg text-center border-2 border-white mb-6 p-6">
         <h3 className="text-[#FA69D3] text-xl lg:text-3xl font-bold">
           ¿Querés conocer la grilla de artistas de Festival Bandera 2025 antes
@@ -11,12 +11,12 @@ export const RestInformation = () => {
         </h3>
         <ul className="list-disc mt-5 text-left pl-6">
           <li className="mb-4 md:mb-0">
-            Comprando tus entradas sector <strong>CAMPO</strong> en preventa
+            Comprando tus entradas Online sector <strong>CAMPO</strong> en preventa
             hasta el domingo 15 de junio, participás por accesos exclusivos al
             evento develación de la grilla 2025.
           </li>
           <li>
-            Comprando tus entradas sector <strong>EXPERIENCIA BANDERA</strong>{" "}
+            Comprando tus entradas Online sector <strong>EXPERIENCIA BANDERA</strong>{" "}
             en preventa hasta el domingo 15 de junio, ya tenés tu lugar
             asegurado para el evento develación de la grilla 2025.
           </li>
@@ -80,6 +80,16 @@ export const RestInformation = () => {
       </div> */}
 
       <div className="mt-24">
+        <h3 className="font-bold mb-4 text-sm">PUNTO DE VENTA FÍSICO</h3>
+        <div>
+          <p className="flex items-start">
+            <span className="mr-2">•</span>
+            Amadeus - Córdoba 1369 L.9 (Con descuento - Solo Efectivo)
+          </p>
+          
+        </div>
+      </div>
+      <div className="mt-16">
         <h3 className="font-bold mb-4 text-sm">MENORES</h3>
         <div>
           <p className="flex items-start">
