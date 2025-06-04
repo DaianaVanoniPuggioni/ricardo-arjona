@@ -75,7 +75,7 @@ export const Preventas = () => {
         className=" flex flex-col items-center justify-center rounded-lg text-center border-2 border-white p-6 lg:p-10 mb-6"
       >
         <h3 className="text-xl lg:text-3xl font-bold">
-          Sábado 1 de Noviembre - 14:30 Horas
+          Sábado 1 de Noviembre <span className="hidden min-[430px]:inline">-</span> 14:30hs
         </h3>
         <h3 className="text-xl lg:text-3xl font-bold mt-2">
           Hipódromo de Rosario

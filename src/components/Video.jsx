@@ -1,6 +1,6 @@
 export const Video = () => {
   return (
-    <section className="text-white px-4 mt-20">
+    <section className="text-white mt-20">
       <iframe
         width="100%"
         height="315"
