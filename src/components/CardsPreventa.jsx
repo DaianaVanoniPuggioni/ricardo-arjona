@@ -211,8 +211,8 @@ export const CardsPreventa = () => {
             </li>
           </ul>
           <div className="mt-auto">
-            <p className="text-2xl font-bold text-white">$190.000</p>
-            <p className="text-sm text-gray-300">+ $19.000 fee</p>
+            <p className="text-2xl font-bold text-white">$210.000</p>
+            <p className="text-sm text-gray-300">+ $21.000 fee</p>
           </div>
         </div>
       </div>
